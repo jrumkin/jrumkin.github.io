@@ -3,16 +3,18 @@ project:
   output-dir: docs
 
 website:
-  title: "jrumkin.github.io"
+  title: "Jessi Rumkin"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - Projects and Portfolios.qmd
 
 format:
   html:
-    theme: cosmo
+    backgroundcolor: "#FCF9F3"
+    theme: lumen
     css: styles.css
     toc: true
 

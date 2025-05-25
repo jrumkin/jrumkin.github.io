@@ -1,16 +1,23 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jessi Rumkin",
+    "objectID": "Projects and Portfolios.html",
+    "href": "Projects and Portfolios.html",
+    "title": "Projects and Portfolios",
     "section": "",
-    "text": "Test test\n\n1 + 1\n\n[1] 2"
+    "text": "A projects and portfolios page."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "This is the about.qmd site. This page will be a longer “about me” section"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jessi Rumkin",
+    "section": "",
+    "text": "Landing page"
   }
 ]
