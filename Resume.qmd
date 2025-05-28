@@ -1,0 +1,6 @@
+---
+title: "Resume"
+format: html
+---
+
+A page that will have a visual resume on the page, and a link to download a resume.

@@ -1,6 +1,0 @@
----
-title: "Projects and Portfolios"
-format: html
----
-
-A projects and portfolios page.

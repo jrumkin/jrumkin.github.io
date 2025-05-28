@@ -1,0 +1,11 @@
+---
+title: "Projects"
+listing:
+  contents: posts 
+  type: grid
+  categories: true
+page-layout: full
+format: html
+---
+
+Projects Blog listings page

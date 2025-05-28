@@ -5,11 +5,17 @@ project:
 website:
   title: "Jessi Rumkin"
   navbar:
+    title: FALSE
     left:
       - href: index.qmd
-        text: Home
+        text: Jessi Rumkin - Home
       - about.qmd
-      - Projects and Portfolios.qmd
+      - posts.qmd
+      - text: "Education Highlights"
+        menu: 
+          - UCSB-enviro.qmd
+          - UCSB-GIS.qmd
+          - Netherlands-Edu.qmd
 
 format:
   html:

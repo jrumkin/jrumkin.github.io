@@ -1,0 +1,6 @@
+---
+title: "UCSB Spatial Science"
+format: html
+---
+
+This a page to highlight and explain my spatial science education at UCSB, this will hopefully link to some of my blog posts as well. 

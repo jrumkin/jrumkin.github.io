@@ -1,10 +1,31 @@
 [
   {
-    "objectID": "Projects and Portfolios.html",
-    "href": "Projects and Portfolios.html",
-    "title": "Projects and Portfolios",
+    "objectID": "UCSB-GIS.html",
+    "href": "UCSB-GIS.html",
+    "title": "UCSB Spatial Science",
     "section": "",
-    "text": "A projects and portfolios page."
+    "text": "This a page to highlight and explain my spatial science education at UCSB, this will hopefully link to some of my blog posts as well."
+  },
+  {
+    "objectID": "Resume.html",
+    "href": "Resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "A page that will have a visual resume on the page, and a link to download a resume."
+  },
+  {
+    "objectID": "posts/project-website/index.html",
+    "href": "posts/project-website/index.html",
+    "title": "This website!",
+    "section": "",
+    "text": "I created this website using RStudio and Quarto websites, and published it using GitHub pages."
+  },
+  {
+    "objectID": "Netherlands-Edu.html",
+    "href": "Netherlands-Edu.html",
+    "title": "Netherlands Education",
+    "section": "",
+    "text": "(This is a page that will go over what I learned while studying abroad in the Netherlands, I want to update it as I go)\n\nComing Soon!"
   },
   {
     "objectID": "about.html",
@@ -19,5 +40,26 @@
     "title": "Jessi Rumkin",
     "section": "",
     "text": "Landing page"
+  },
+  {
+    "objectID": "posts/personal-data-project/index.html",
+    "href": "posts/personal-data-project/index.html",
+    "title": "Personal Data Project",
+    "section": "",
+    "text": "A project for UCSB ENV S 193DS, I collected data on my study habits. For this course, I practiced data collection best practices, analyzed data, used statistical techniques to measure effects, and created data visualizations that properly represent findings and data biases."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Projects Blog listings page\n\n\n\n\n\n\n\n\n\n\n\n\nPersonal Data Project\n\n\n\nRStudio\n\n\nData Science\n\n\nUCSB\n\n\n\nA data science project based on data I collected on my life.\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThis website!\n\n\n\nQuarto\n\n\nUCSB\n\n\n\n\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "UCSB-enviro.html",
+    "href": "UCSB-enviro.html",
+    "title": "UCSB Environmental Studies",
+    "section": "",
+    "text": "This is a page that will detail all the highlights of my Enviro education at UCSB"
   }
 ]

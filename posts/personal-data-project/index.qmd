@@ -1,0 +1,10 @@
+---
+title: "Personal Data Project"
+description: A data science project based on data I collected on my life.
+author: "Jessi Rumkin"
+date: 05-28-2025
+categories: [RStudio, Data Science, UCSB]
+format: html
+---
+
+A project for UCSB ENV S 193DS, I collected data on my study habits. For this course, I practiced data collection best practices, analyzed data, used statistical techniques to measure effects, and created data visualizations that properly represent findings and data biases. 

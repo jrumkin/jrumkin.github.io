@@ -1,0 +1,6 @@
+---
+title: "UCSB Environmental Studies"
+format: html
+---
+
+This is a page that will detail all the highlights of my Enviro education at UCSB
