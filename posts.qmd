@@ -8,4 +8,6 @@ page-layout: full
 format: html
 ---
 
-Projects Blog listings page
+Projects that I've worked on in a bunch of different areas, all tagged by category!
+
+

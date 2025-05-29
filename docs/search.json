@@ -32,7 +32,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "This is the about.qmd site. This page will be a longer “about me” section"
+    "text": "Hello!\nA short personal introduction to me.\n\n\nHiking\nI love to hike, and will show some pictures of my favorite places and experiences."
+  },
+  {
+    "objectID": "about.html#hiking",
+    "href": "about.html#hiking",
+    "title": "About",
+    "section": "",
+    "text": "I love to hike, and will show some pictures of my favorite places and experiences."
   },
   {
     "objectID": "index.html",
@@ -53,7 +60,7 @@
     "href": "posts.html",
     "title": "Projects",
     "section": "",
-    "text": "Projects Blog listings page\n\n\n\n\n\n\n\n\n\n\n\n\nPersonal Data Project\n\n\n\nRStudio\n\n\nData Science\n\n\nUCSB\n\n\n\nA data science project based on data I collected on my life.\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThis website!\n\n\n\nQuarto\n\n\nUCSB\n\n\n\n\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Projects that I’ve worked on in a bunch of different areas, all tagged by category!\n\n\n\n\n\n\n\n\n\n\n\n\nPersonal Data Project\n\n\n\nRStudio\n\n\nData Science\n\n\nUCSB\n\n\n\nA data science project based on data I collected on my life.\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThis website!\n\n\n\nQuarto\n\n\nUCSB\n\n\n\n\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "UCSB-enviro.html",

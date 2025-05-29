@@ -2,4 +2,12 @@
 title: "About"
 ---
 
-This is the about.qmd site. This page will be a longer "about me" section
+#### Hello!
+
+A short personal introduction to me.
+
+#### Hiking
+
+I love to hike, and will show some pictures of my favorite places and experiences.
+
+

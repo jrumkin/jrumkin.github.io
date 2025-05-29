@@ -4,8 +4,11 @@ project:
 
 website:
   title: "Jessi Rumkin"
+  favicon: j-favicon.png
   navbar:
     title: FALSE
+    logo: j-favicon.png
+    logo-alt: "lowercase j image"
     left:
       - href: index.qmd
         text: Jessi Rumkin - Home
@@ -20,8 +23,7 @@ website:
 
 format:
   html:
-    backgroundcolor: "#FCF9F3"
-    theme: lumen
+    theme: zephyr
     css: styles.css
     toc: true
 
