@@ -21,6 +21,13 @@
     "text": "I created this website using RStudio and Quarto websites, and published it using GitHub pages."
   },
   {
+    "objectID": "posts/gis-lahar/gis-lahar.html",
+    "href": "posts/gis-lahar/gis-lahar.html",
+    "title": "Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand",
+    "section": "",
+    "text": "Capstone GIS project."
+  },
+  {
     "objectID": "Netherlands-Edu.html",
     "href": "Netherlands-Edu.html",
     "title": "Netherlands Education",
@@ -35,18 +42,18 @@
     "text": "Hello!\nA short personal introduction to me.\n\n\nHiking\nI love to hike, and will show some pictures of my favorite places and experiences."
   },
   {
-    "objectID": "about.html#hiking",
-    "href": "about.html#hiking",
-    "title": "About",
-    "section": "",
-    "text": "I love to hike, and will show some pictures of my favorite places and experiences."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Jessi Rumkin",
     "section": "",
     "text": "Landing page"
+  },
+  {
+    "objectID": "posts/Bren Environmental Studies Fellowship/index.html",
+    "href": "posts/Bren Environmental Studies Fellowship/index.html",
+    "title": "Bren Environmental Studies Fellowship",
+    "section": "",
+    "text": "A description of what I’ve done and learned from the fellowship."
   },
   {
     "objectID": "posts/personal-data-project/index.html",
@@ -60,7 +67,7 @@
     "href": "posts.html",
     "title": "Projects",
     "section": "",
-    "text": "Projects that I’ve worked on in a bunch of different areas, all tagged by category!\n\n\n\n\n\n\n\n\n\n\n\n\nPersonal Data Project\n\n\n\nRStudio\n\n\nData Science\n\n\nUCSB\n\n\n\nA data science project based on data I collected on my life.\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThis website!\n\n\n\nQuarto\n\n\nUCSB\n\n\n\n\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Projects that I’ve worked on in a bunch of different areas, all tagged by category!\n\n\n\n\n\n\n\n\n\n\n\n\nAcoustic flow monitor arrays on Mt. Ruapehu, New Zealand\n\n\nA capstone project using ArcGIS Pro\n\n\n\nJessi Rumkin\n\n\nMay 25, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nBren Environmental Studies Fellowship\n\n\n\nUCSB\n\n\nBren\n\n\n\nA professional development fellowship to link UCSB environmental studies students to the Bren envrironmental graduate school.\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPersonal Data Project\n\n\n\nRStudio\n\n\nData Science\n\n\nUCSB\n\n\n\nA data science project based on data I collected on my life.\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThis website!\n\n\n\nQuarto\n\n\nUCSB\n\n\n\n\n\n\n\nJessi Rumkin\n\n\nMay 28, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "UCSB-enviro.html",

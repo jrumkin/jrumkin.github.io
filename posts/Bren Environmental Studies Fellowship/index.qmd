@@ -1,0 +1,10 @@
+---
+title: "Bren Environmental Studies Fellowship"
+description: A professional development fellowship to link UCSB environmental studies students to the Bren envrironmental graduate school.
+author: "Jessi Rumkin"
+date: 05-28-2025
+categories: [UCSB, Bren]
+format: html
+---
+
+A description of what I've done and learned from the fellowship.

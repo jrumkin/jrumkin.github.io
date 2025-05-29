@@ -5,4 +5,4 @@ format: html
 
 (This is a page that will go over what I learned while studying abroad in the Netherlands, I want to update it as I go)
 
-# Coming Soon!
+## Coming Soon!

@@ -1,0 +1,9 @@
+---
+title: "Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand"
+description: A capstone project using ArcGIS Pro
+author: "Jessi Rumkin"
+date: 05-25-2025
+format: html
+---
+
+Capstone GIS project.
