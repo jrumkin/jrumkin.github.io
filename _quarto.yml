@@ -16,6 +16,7 @@ website:
           - UCSB-enviro.qmd
           - UCSB-GIS.qmd
           - Netherlands-Edu.qmd
+      - Resume.qmd
 
 format:
   html:
