@@ -5,6 +5,9 @@ project:
 website:
   title: "Jessi Rumkin"
   favicon: j-favicon.png
+  search: 
+    location: navbar
+    type: overlay
   navbar:
     title: FALSE
     logo: j-favicon.png
@@ -12,7 +15,8 @@ website:
     left:
       - href: index.qmd
         text: Jessi Rumkin - Home
-      - about.qmd
+      - href: about.qmd
+        text: About Me
       - posts.qmd
       - text: "Education Highlights"
         menu: 
@@ -20,6 +24,19 @@ website:
           - UCSB-GIS.qmd
           - Netherlands-Edu.qmd
       - Resume.qmd
+    right: 
+      - text: "Contact and Other links"
+        menu: 
+          - icon: envelope
+            text: Email me
+            href: mailto::jrumkin@ucsb.edu
+          - text: "jrumkin@ucsb.edu"
+          - icon: linkedin
+            text: "LinkedIn"
+            href: www.linkedin.com/in/jessica-rumkin-80b59129a
+          - icon: github
+            text: "GitHub"
+            href: https://github.com/jrumkin
 
 format:
   html:
