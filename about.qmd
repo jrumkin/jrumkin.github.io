@@ -1,13 +1,45 @@
 ---
 title: "About"
+lightbox: true
+toc: true
 ---
 
-#### Hello!
+##### Hello!
 
-A short personal introduction to me.
+I'm currently a student at Univserity of California, Santa Barbara and I have loved my time here. I've lived by the beach for most of my life and living in Goleta has been the best place to find so many opportunities to follow my professional and personal passions. 
 
-#### Hiking
+![Stork Tower at UCSB](photos/stork_tower.jpeg)
+![Isla Vista Sunset](photos/IV_sunset.jpg)
 
-I love to hike, and will show some pictures of my favorite places and experiences.
+
+### Hiking
+
+I really love hiking, and it's usually for the purpose of getting outside and eating lunch in a much cooler spot.
+
+![Sunrise hike in Southern California](photos/sunrise_sandstone.jpeg)
+
+![Southern California hike with some friends](photos/camping_hike.JPG)
+
+![Sunrise hike with my NPS interns](photos/nps_hike_rock.jpg)
+
+### Chasing the Snow
+
+One of the only things I can't get on the coast of southern California is snow. I have found some of my absolute favorite spots around Mammoth and Mono County, where I also love to snowboard as much as I can. 
+
+![McLeod Lake in the spring](photos/McLeod.jpeg)
+
+![Convict lake in early spring](photos/convict_lake.jpeg)
+
+![Friend trip to enjoy fresh snow](photos/mammoth_stump.jpg)
+
+![View on a snowboarding trip](photos/snowboarding_view.jpg)
+
+### Shi
+
+And finally, my two favorite pictures of my brother's dog. She is the cutest thing in the world and who doesn't like dog pictures.
+
+![Shi playing in the snow](photos/shi_snow.jpg)
+
+![Shi very oddly playing in the snow](photos/shi.jpg)
 
 

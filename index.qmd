@@ -4,6 +4,23 @@ about:
   template: trestles
   image: profile.jpeg
   image-shape: rounded
+links:
+    - text: LinkedIn
+      href: www.linkedin.com/in/jessica-rumkin-80b59129a
+    - text: GitHub
+      href: https://github.com/jrumkin
+    - text: Email
+      href: jrumkin@ucsb.edu
 ---
 
-Landing page
+Hello! My name is Jessica Rumkin, but I often go by Jessi.
+
+This is my personal website that I built; here you will find information about me and my profession and academic experience. Check out the Projects page to see a wide variety of experiences, the GitHub link to see the code for this site, or the About page to see some really pretty hiking photos.
+
+------------------------------------------------------------------------
+
+I'm currently studying at University fo California, Santa Barbara (UCSB) for a BS in Environmental Studies with an additional emphasis on Geographic Spatial Science. I will be finishing my degree at Utrecht University in the Netherlands next fall focusing on restoration and agroecology innovation.
+
+At my current position as Growing Grounds Coordinator for a UCSB club and non-profit called Your Children's Trees I co-manage a nursery of 350+ trees, mostly Coast Live oak, for local urban reforestation and ecosystem restoration. I also manage weekly events to delegate, teach, and supervise up to 15 volunteers to maximize their learning and completion of tasks.
+
+Please see the contact links for all the ways to reach me!
