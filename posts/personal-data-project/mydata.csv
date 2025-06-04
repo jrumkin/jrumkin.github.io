@@ -1,0 +1,41 @@
+date,start_time,end_time,focus_score,company_type,deadline_type,weather_type,sleep_decimal_hour,duration_time,duration_decimal_hour,final_productivity_score,accompanied
+4/22/2025,5:37:00 PM,7:01:00 PM,2,Friend,Self imposed,Cold,8.4,1:24:00,1.40,2.80,Accompanied
+4/23/2025,4:00:00 PM,4:56:00 PM,4,Alone,Self imposed,Wind,9.1,0:56:00,0.93,3.73,Alone
+4/23/2025,8:18:00 PM,9:58:00 PM,4,Friend,External,Cold,10.3,1:40:00,1.67,6.67,Accompanied
+4/24/2025,12:04:00 PM,1:54:00 PM,4,Friend,External,Warm,9.7,1:50:00,1.83,7.33,Accompanied
+4/24/2025,8:30:00 PM,9:51:00 PM,3,Friend,External,Cold,9.8,1:21:00,1.35,4.05,Accompanied
+4/25/2025,11:58:00 AM,1:15:00 PM,2,Alone,External,Wind,9.7,1:17:00,1.28,2.57,Alone
+4/25/2025,5:30:00 PM,8:30:00 PM,4,Alone,External,Wind,9,3:00:00,3.00,12.00,Alone
+4/26/2025,3:26:00 PM,4:15:00 PM,5,Alone,Self imposed,Warm,8.8,0:49:00,0.82,4.08,Alone
+4/27/2025,5:49:00 PM,7:23:00 PM,3,Alone,External,Cold,7.9,1:34:00,1.57,4.70,Alone
+4/27/2025,7:50:00 PM,9:02:00 PM,4,Friend,External,Cold,8.9,1:12:00,1.20,4.80,Accompanied
+4/27/2025,10:00:00 PM,11:08:00 PM,3,Alone,External,Cold,8.9,1:08:00,1.13,3.40,Alone
+4/28/2025,2:45:00 PM,4:00:00 PM,3,Alone,Self imposed,Warm,9.1,1:15:00,1.25,3.75,Alone
+4/30/2025,4:15:00 PM,5:40:00 PM,2,Alone,Self imposed,Cold,10.2,1:25:00 AM,1.42,2.83,Alone
+5/5/2025,6:50:00 PM,11:58:00 PM,2,Acquaintance,Self imposed,Cold,9.7,5:08:00 AM,5.13,10.27,Accompanied
+5/5/2025,5:02:00 PM,6:15:00 PM,3,Friend,Self imposed,Warm,9.7,1:13:00 AM,1.22,3.65,Accompanied
+5/6/2025,9:45:00 AM,12:00:00 PM,3,Alone,External,Warm,7.4,2:15:00 AM,2.25,6.75,Alone
+5/6/2025,4:15:00 PM,7:00:00 PM,4,Friend,Self imposed,Warm,7.4,2:45:00 AM,2.75,11.00,Accompanied
+5/7/2025,2:30:00 PM,7:20:00 PM,3,Acquaintance,External,Cold,7.8,4:50:00 AM,4.83,14.50,Accompanied
+5/13/2025,3:15:00 PM,4:35:00 PM,2,Acquaintance,Self imposed,Wind,9.1,1:20:00 AM,1.33,2.67,Accompanied
+5/21/2025,5:02:00 PM,7:30:00 PM,2,Alone,Self imposed,Warm,10.9,2:28:00 AM,2.47,4.93,Alone
+5/15/2025,3:13:00 PM,4:50:00 PM,4,Alone,External,Warm,8.2,1:37:00,1.62,6.47,Alone
+5/16/2025,7:05:00 PM,8:55:00 PM,5,Alone,External,Cold,6.1,1:50:00,1.83,9.17,Alone
+5/17/2025,11:20:00 AM,12:40:00 PM,2,Alone,Self imposed,Cold,7.8,1:20:00,1.33,2.67,Alone
+5/18/2025,10:56:00 PM,11:59:00 PM,5,Alone,External,Warm,9.5,1:03:00,1.05,5.25,Alone
+5/20/2025,4:05:00 PM,4:38:00 PM,2,Alone,Self imposed,Warm,10.1,0:33:00,0.55,1.10,Alone
+5/20/2025,4:38:00 PM,7:12:00 PM,4,Friend,External,Warm,10.1,2:34:00,2.57,10.27,Accompanied
+5/22/2025,5:02:00 PM,6:43:00 PM,5,Acquaintance,External,Warm,10.6,1:41:00,1.68,8.42,Accompanied
+5/22/2025,7:02:00 PM,9:02:00 PM,3,Friend,Self imposed,Cold,9.7,2:00:00,2.00,6.00,Accompanied
+5/24/2025,8:35:00 PM,11:15:00 PM,2,Alone,Self imposed,Warm,7.9,2:40:00,2.67,5.33,Alone
+5/26/2025,5:02:00 PM,7:09:00 PM,5,Friend,External,Warm,9.8,2:07:00,2.12,10.58,Accompanied
+5/27/2025,11:12:00 AM,1:28:00 PM,3,Alone,Self imposed,Warm,7.8,2:16:00,2.27,6.80,Alone
+5/27/2025,3:30:00 PM,7:00 PM,4,Friend,External,Warm,7.8,3:30:00,3.50,14.00,Accompanied
+5/28/2025,9:24:00 PM,11:48:00 PM,3,Alone,External,Warm,10.2,2:24:00,2.40,7.20,Alone
+5/29/2025,7:55:00 PM,11:59:00 PM,5,Friend,External,Cold,10.1,4:04:00,4.07,20.33,Accompanied
+5/30/2025,8:00:00 AM,11:02:00 AM,5,Alone,External,Warm,4.5,3:02:00,3.03,15.17,Alone
+5/31/2025,2:15:00 PM,5:40:00 PM,4,Friend,External,Cold,10.2,3:25:00,3.42,13.67,Accompanied
+6/2/2025,7:20:00 PM,11:50:00 PM,4,Friend,External,Warm,8.9,4:30:00,4.50,18.00,Accompanied
+6/3/2025,10:10:00 AM,1:50:00 PM,2,Alone,Self imposed,Warm,8.2,3:40:00,3.67,7.33,Alone
+6/3/2025,5:15:00 PM,7:30:00 PM,2,Friend,External,Cold,8.2,2:15:00,2.25,4.50,Accompanied
+6/3/2025,8:05:00 PM,11:59:00 PM,2,Alone,Self imposed,Cold,8.2,3:54:00,3.90,7.80,Alone

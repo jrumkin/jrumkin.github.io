@@ -6,7 +6,7 @@ about:
   image-shape: rounded
   links:
     - text: LinkedIn
-      href: www.linkedin.com/in/jessica-rumkin-80b59129a
+      href: https://www.linkedin.com/in/jessica-rumkin-80b59129a/
     - text: Email
       href: mailto::jrumkin@ucsb.edu
 ---

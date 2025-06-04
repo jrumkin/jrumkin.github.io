@@ -5,6 +5,156 @@ author: "Jessi Rumkin"
 date: 05-28-2025
 categories: [RStudio, Data Science, UCSB]
 format: html
+toc: true
+execute:
+  message: false # make sure messages don't show up
+  warning: false # make sure warnings don't show up
 ---
 
-A project for UCSB ENV S 193DS, I collected data on my study habits. For this course, I practiced data collection best practices, analyzed data, used statistical techniques to measure effects, and created data visualizations that properly represent findings and data biases.
+A project for UCSB ENV S 193DS. I collected data on my study habits with several variables to answer my main question: Am I more productive when I work by myself or with at least one other person?
+
+Use side navigation to jump to code or interactive figures.
+
+### Set Up
+
+```{r}
+#| label: Set up code
+
+library(tidyverse)
+library(here)
+library(gt)
+library(janitor)
+library(readxl)
+library(plotly)
+library(DT)
+
+mydata <- read.csv("C:/Users/jlrum/MyGit/jrumkin.github.io/posts/personal-data-project/mydata.csv")
+
+```
+
+```{r}
+#| label: Summarize data
+
+#summarizing personal data
+mydata_summary <-  mydata |> #make an object called mydata_summary using mydata file
+  group_by(accompanied) |> #group the sumary by company type
+  summarise(mean_score = round(mean(final_productivity_score),digits = 1), #find mean
+            sd = round(sd(final_productivity_score), digits = 1), #find standard deviation
+            se = round((sd(final_productivity_score)/sqrt(length(final_productivity_score))),digits = 1), #find standard error
+            ci_lower = round(mean_score - 1.96 * (sd(final_productivity_score)/ sqrt(length(final_productivity_score))),digits = 1), #find lower confidence interval at 95%
+            ci_upper = round(mean_score + 1.96 * (sd(final_productivity_score) / sqrt(length(final_productivity_score))),digits = 1) #find upper confidence interval at 95%
+  ) |> 
+  mutate(marker = paste0("Type: ", accompanied, "<br>",
+                         "Mean: ", mean_score, "<br>",
+                         "95% Confidence interval for mean: ", ci_upper, " - ", ci_lower))
+
+```
+
+### Interactive data table
+
+::: {.callout-note collapse="true"}
+## Brief data dictionary for mydata
+
+Response Variable: Final Productivity Score 
+Pre-selected predictor variable: accompanied (Accompanied or Alone)
+
+Other variables collected: Company type (Alone, Friend, or Acquaintance), Sleep (decimal hour), deadline type (self imposed or external), and weather (Warm, Cold, Wind, or Rain)
+
+Focus Score was self determined using this guideline: (1 is the lowest, 5 is the highest, discrete numeric data)
+
+1: Constantly distracted + brain fog, low critical thinking applied
+
+2: Frequently distracted, trouble staying on task, bored, needed to re-do or re-read instructions many times
+
+3: Occasionally distracted, able to return to the task at hand without severe backtracking
+
+4: Mostly focused, some distractions but they are usually intentional breaks
+
+5: Highly focused, very few to no distractions, efficient workflow
+:::
+
+```{r}
+#Using DT to create an interactive table
+datatable(data = mydata)
+
+
+```
+
+### Data Visualization Code
+
+```{r}
+#| label: Creating marker for interactive feature
+
+# new mydata object with marker column
+mydata_marker <- mydata |>  
+  
+  # create a new column called "marker" 
+  mutate(marker = paste0("Type: ", company_type, "<br>",
+                         "Score: ", focus_score, " × ", "Duration (hr): ", duration_decimal_hour, "<br>",
+                         "= ", "Final Productivity Score: ", final_productivity_score))
+
+
+```
+
+```{r}
+
+#creating static visualizations for personal data
+
+mydata_static <- ggplot(data = mydata_marker,
+                       aes(x = accompanied,
+                           y = final_productivity_score,
+                           color = accompanied,
+                           text = marker)) +
+  geom_jitter(height = 0, #add geometry of jitter plot, 0 height jitter
+              width = 0.2, #0.2 jitter width
+              shape = 20) + #shape is open circles for the jitter points
+  geom_errorbar(data = mydata_summary, #add a geometry of an error bar from data of mydata_summary
+                aes(x = accompanied,
+                    y = mean_score,
+                    ymin = ci_lower,
+                    ymax = ci_upper,
+                    width = 0.12),
+                    color = "black") +
+  geom_point(data = mydata_summary, #add geometry of a point from mydata_summary of the mean productivity score
+             aes(x = accompanied,
+                 y = mean_score),
+             color = "black", #point showing the mean is black
+             size = 2) +
+  labs(x = "Company Type", #labling the x and y axis and the title
+       y = "Final Productivity Score",
+       title = "Mean Productivity Score between \nAccompanied and Alone study sessions") +
+  scale_color_manual(values = c("Accompanied" = "#377b42", #manual colors for groups 
+                                "Alone" = "#AA71BA")) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+
+#using plotly to make the figure interactive
+mydata_interactive <- ggplotly(mydata_static, tooltip = "text") |> 
+  layout( 
+    font = list(family = "Times"),
+  
+    # editing the marker/tooltip/hoverlabel 
+    hoverlabel = list(
+      # editing the font: all goes in a list()
+      font = list(
+        family = "Times",
+        size = 13,
+        color = "#FFFFFF",
+        align = "left"
+      )))
+
+
+```
+
+### Mean Productivity Interactive Figure
+
+```{r}
+#| echo: false
+
+mydata_interactive #print the interactive figure
+
+```
+
+### Affective Data Visualization
+

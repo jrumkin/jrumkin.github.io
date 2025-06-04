@@ -1,13 +1,13 @@
 ---
 title: "Projects"
 listing:
-  contents: posts 
-  type: grid
+  contents: posts
+  type: default
   categories: true
+search: true
 page-layout: full
 format: html
 ---
 
-Projects that I've worked on in a bunch of different areas, all tagged by category!
-
-
+A wide variety of personal and professional projects. 
+See the side navigation to explore and filter by category.

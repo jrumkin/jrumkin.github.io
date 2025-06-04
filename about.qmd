@@ -1,45 +1,57 @@
 ---
 title: "About Me"
 lightbox: true
+match: auto
+loop: false
 toc: true
 ---
 
 ##### Hello!
 
-I'm currently a student at Univserity of California, Santa Barbara and I have loved my time here. I've lived by the beach for most of my life and living in Goleta has been the best place to find so many opportunities to follow my professional and personal passions. 
+I'm currently a student at Univserity of California, Santa Barbara and I have loved my time here. I've lived by the beach for most of my life and living in Goleta has been the best place to find so many opportunities to follow my professional and personal passions.
 
-![Stork Tower at UCSB](photos/stork_tower.jpeg){group = "About me"}
-![Isla Vista Sunset](photos/IV_sunset.jpg){group = "About me"}
+```{r}
+#| fig-cap: "Stork Tower at UCSB"
+#| fig-cap-location: bottom
+#| fig-width: 100
+```
 
+![Stork Tower at UCSB](photos/stork_tower.jpeg)
+
+```{r}
+#| fig-width: 100
+#| fig-cap-location: bottom
+#| fig-cap: "Isla Vista sunset"
+```
+
+![Isla Vista Sunset](photos/IV_sunset.jpg)
 
 ### Hiking
 
 I really love hiking, and it's usually for the purpose of getting outside and eating lunch in a much cooler spot.
 
-![Sunrise hike in Southern California](photos/sunrise_sandstone.jpeg){group = "About me"}
+![Sunrise hike in Southern California](photos/sunrise_sandstone.jpeg){.img-fluid}
 
-![Southern California hike with some friends](photos/camping_hike.JPG){group = "About me"}
+![Southern California hike with some friends](photos/camping_hike.JPG){.img-fluid}
 
-![Sunrise hike with my NPS interns](photos/nps_hike_rock.jpg){group = "About me"}
+![Sunrise hike with my NPS interns](photos/nps_hike_rock.jpg){.img-fluid}
 
 ### Chasing the snow
 
-One of the only things I can't get on the coast of southern California is snow. I have found some of my absolute favorite spots around Mammoth and Mono County, where I also love to snowboard as much as I can. 
+One of the only things I can't get on the coast of southern California is snow. I have found some of my absolute favorite spots around Mammoth and Mono County, where I also love to snowboard as much as I can.
 
-![McLeod Lake in the spring](photos/McLeod.jpeg){group = "About me"}
+![McLeod Lake in the spring](photos/McLeod.jpeg)
 
-![Convict lake in early spring](photos/convict_lake.jpeg){group = "About me"}
+![Convict lake in early spring](photos/convict_lake.jpeg)
 
-![Friend trip to enjoy fresh snow](photos/mammoth_stump.jpg){group = "About me"}
+![Friend trip to enjoy fresh snow](photos/mammoth_stump.jpg)
 
-![View on a snowboarding trip](photos/snowboarding_view.jpg){group = "About me"}
+![View on a snowboarding trip](photos/snowboarding_view.jpg)
 
 ### Shi
 
 And finally, my two favorite pictures of my brother's dog. She is the cutest thing in the world and who doesn't like dog pictures.
 
-![Shi playing in the snow](photos/shi_snow.jpg){group = "About me"}
+![Shi playing in the snow](photos/shi_snow.jpg)
 
-![Shi very oddly playing in the snow](photos/shi.jpg){group = "About me"}
-
-
+![Shi very oddly playing in the snow](photos/shi.jpg)

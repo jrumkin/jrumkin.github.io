@@ -28,12 +28,12 @@ website:
       - text: "Contact and Other links"
         menu: 
           - icon: envelope
-            text: Email me
+            text: Open email client
             href: mailto::jrumkin@ucsb.edu
           - text: "jrumkin@ucsb.edu"
           - icon: linkedin
             text: "LinkedIn"
-            href: www.linkedin.com/in/jessica-rumkin-80b59129a
+            href: https://www.linkedin.com/in/jessica-rumkin-80b59129a/
           - icon: github
             text: "GitHub"
             href: https://github.com/jrumkin
