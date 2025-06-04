@@ -43,6 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -55,7 +58,6 @@ ul.task-list li input[type="checkbox"] {
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -98,7 +100,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About</span></a>
+<span class="menu-text">About Me</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../posts.html"> 
@@ -124,9 +126,34 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../Resume.html"> 
+    <a class="nav-link" href="../../Rumkin_General_Resume.pdf" target="_blank"> 
 <span class="menu-text">Resume</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-contact-and-other-links" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Contact and Other links</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-contact-and-other-links">    
+        <li>
+    <a class="dropdown-item" href="mailto::jrumkin@ucsb.edu"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="dropdown-text">Open email client</span></a>
+  </li>  
+        <li class="dropdown-header">jrumkin@ucsb.edu</li>
+        <li>
+    <a class="dropdown-item" href="https://www.linkedin.com/in/jessica-rumkin-80b59129a/"><i class="bi bi-linkedin" role="img">
+</i> 
+ <span class="dropdown-text">LinkedIn</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/jrumkin"><i class="bi bi-github" role="img">
+</i> 
+ <span class="dropdown-text">GitHub</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -138,8 +165,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#poster" id="toc-poster" class="nav-link active" data-scroll-target="#poster">Poster</a></li>
+  <li><a href="#digital-artifact-esri-story-map" id="toc-digital-artifact-esri-story-map" class="nav-link" data-scroll-target="#digital-artifact-esri-story-map">Digital Artifact: Esri Story Map</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -180,9 +214,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Capstone GIS project.</p>
+<p>Capstone project for the UCSB 176A-C course series on geographic information systems and science (GIS).</p>
+<p>This group project culminated in a symposium to present our posters and digital artifacts to other students, professors, geography department admin, and professionals. We developed a research project and used ArcGIS Pro to answer spatial questions.</p>
+<section id="poster" class="level2">
+<h2 class="anchored" data-anchor-id="poster">Poster</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="176C Poster.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="GIS Research Poster"><img src="176C Poster.jpg" class="img-fluid figure-img" alt="GIS Research Poster"></a></p>
+<figcaption>GIS Research Poster</figcaption>
+</figure>
+</div>
+<p>Open Poster in a new tab: <a href="GIS-poster.pdf" target="_blank">View the PDF</a></p>
+</section>
+<section id="digital-artifact-esri-story-map" class="level2">
+<h2 class="anchored" data-anchor-id="digital-artifact-esri-story-map">Digital Artifact: Esri Story Map</h2>
+<p>See our full report in the Esri Story Map: <a href="https://arcg.is/1Tf0vS" class="uri">https://arcg.is/1Tf0vS</a></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -606,6 +655,38 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

@@ -3,7 +3,23 @@ title: "Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand"
 description: A capstone project using ArcGIS Pro
 author: "Jessi Rumkin"
 date: 05-25-2025
+lightbox: TRUE
 format: html
 ---
 
-Capstone GIS project.
+Capstone project for the UCSB 176A-C course series on geographic information systems and science (GIS).
+
+This group project culminated in a symposium to present our posters and digital artifacts to other students, professors, geography department admin, and professionals. We developed a research project and used ArcGIS Pro to answer spatial questions.
+
+## Poster
+
+![GIS Research Poster](176C%20Poster.jpg)
+
+Open Poster in a new tab:
+[View the PDF](GIS-poster.pdf){target="_blank"}
+
+
+
+## Digital Artifact: Esri Story Map
+
+See our full report in the Esri Story Map: <https://arcg.is/1Tf0vS>
