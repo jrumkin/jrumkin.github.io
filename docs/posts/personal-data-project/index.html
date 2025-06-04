@@ -23,6 +23,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -69,6 +103,34 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+
+<script src="../../site_libs/datatables-binding-0.33/datatables.js"></script>
+
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
+<link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+
+<script src="../../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+
+<link href="../../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="../../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
+<script src="../../site_libs/plotly-binding-4.10.4/plotly.js"></script>
+
+<script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+
+<link href="../../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+
+<script src="../../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -162,8 +224,18 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#set-up" id="toc-set-up" class="nav-link active" data-scroll-target="#set-up">Set Up</a></li>
+  <li><a href="#interactive-data-table" id="toc-interactive-data-table" class="nav-link" data-scroll-target="#interactive-data-table">Interactive data table</a></li>
+  <li><a href="#data-visualization-code" id="toc-data-visualization-code" class="nav-link" data-scroll-target="#data-visualization-code">Data Visualization Code</a></li>
+  <li><a href="#mean-productivity-interactive-figure" id="toc-mean-productivity-interactive-figure" class="nav-link" data-scroll-target="#mean-productivity-interactive-figure">Mean Productivity Interactive Figure</a></li>
+  <li><a href="#affective-data-visualization" id="toc-affective-data-visualization" class="nav-link" data-scroll-target="#affective-data-visualization">Affective Data Visualization</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -209,9 +281,143 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A project for UCSB ENV S 193DS, I collected data on my study habits. For this course, I practiced data collection best practices, analyzed data, used statistical techniques to measure effects, and created data visualizations that properly represent findings and data biases.</p>
+<p>A project for UCSB ENV S 193DS. I collected data on my study habits with several variables to answer my main question: Am I more productive when I work by myself or with at least one other person?</p>
+<p>Use side navigation to jump to code or interactive figures.</p>
+<section id="set-up" class="level3">
+<h3 class="anchored" data-anchor-id="set-up">Set Up</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(here)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(janitor)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(DT)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>mydata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"C:/Users/jlrum/MyGit/jrumkin.github.io/posts/personal-data-project/mydata.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#summarizing personal data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>mydata_summary <span class="ot">&lt;-</span>  mydata <span class="sc">|&gt;</span> <span class="co">#make an object called mydata_summary using mydata file</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(accompanied) <span class="sc">|&gt;</span> <span class="co">#group the sumary by company type</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">mean_score =</span> <span class="fu">round</span>(<span class="fu">mean</span>(final_productivity_score),<span class="at">digits =</span> <span class="dv">1</span>), <span class="co">#find mean</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>            <span class="at">sd =</span> <span class="fu">round</span>(<span class="fu">sd</span>(final_productivity_score), <span class="at">digits =</span> <span class="dv">1</span>), <span class="co">#find standard deviation</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>            <span class="at">se =</span> <span class="fu">round</span>((<span class="fu">sd</span>(final_productivity_score)<span class="sc">/</span><span class="fu">sqrt</span>(<span class="fu">length</span>(final_productivity_score))),<span class="at">digits =</span> <span class="dv">1</span>), <span class="co">#find standard error</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>            <span class="at">ci_lower =</span> <span class="fu">round</span>(mean_score <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> (<span class="fu">sd</span>(final_productivity_score)<span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">length</span>(final_productivity_score))),<span class="at">digits =</span> <span class="dv">1</span>), <span class="co">#find lower confidence interval at 95%</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>            <span class="at">ci_upper =</span> <span class="fu">round</span>(mean_score <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> (<span class="fu">sd</span>(final_productivity_score) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">length</span>(final_productivity_score))),<span class="at">digits =</span> <span class="dv">1</span>) <span class="co">#find upper confidence interval at 95%</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">marker =</span> <span class="fu">paste0</span>(<span class="st">"Type: "</span>, accompanied, <span class="st">"&lt;br&gt;"</span>,</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"Mean: "</span>, mean_score, <span class="st">"&lt;br&gt;"</span>,</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"95% Confidence interval for mean: "</span>, ci_upper, <span class="st">" - "</span>, ci_lower))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="interactive-data-table" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-data-table">Interactive data table</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Brief data dictionary for mydata
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Response Variable: Final Productivity Score Pre-selected predictor variable: accompanied (Accompanied or Alone)</p>
+<p>Other variables collected: Company type (Alone, Friend, or Acquaintance), Sleep (decimal hour), deadline type (self imposed or external), and weather (Warm, Cold, Wind, or Rain)</p>
+<p>Focus Score was self determined using this guideline: (1 is the lowest, 5 is the highest, discrete numeric data)</p>
+<p>1: Constantly distracted + brain fog, low critical thinking applied</p>
+<p>2: Frequently distracted, trouble staying on task, bored, needed to re-do or re-read instructions many times</p>
+<p>3: Occasionally distracted, able to return to the task at hand without severe backtracking</p>
+<p>4: Mostly focused, some distractions but they are usually intentional breaks</p>
+<p>5: Highly focused, very few to no distractions, efficient workflow</p>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Using DT to create an interactive table</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">datatable</span>(<span class="at">data =</span> mydata)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-f3f28ab73848f366bc97" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-f3f28ab73848f366bc97">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40"],["4/22/2025","4/23/2025","4/23/2025","4/24/2025","4/24/2025","4/25/2025","4/25/2025","4/26/2025","4/27/2025","4/27/2025","4/27/2025","4/28/2025","4/30/2025","5/5/2025","5/5/2025","5/6/2025","5/6/2025","5/7/2025","5/13/2025","5/21/2025","5/15/2025","5/16/2025","5/17/2025","5/18/2025","5/20/2025","5/20/2025","5/22/2025","5/22/2025","5/24/2025","5/26/2025","5/27/2025","5/27/2025","5/28/2025","5/29/2025","5/30/2025","5/31/2025","6/2/2025","6/3/2025","6/3/2025","6/3/2025"],["5:37:00 PM","4:00:00 PM","8:18:00 PM","12:04:00 PM","8:30:00 PM","11:58:00 AM","5:30:00 PM","3:26:00 PM","5:49:00 PM","7:50:00 PM","10:00:00 PM","2:45:00 PM","4:15:00 PM","6:50:00 PM","5:02:00 PM","9:45:00 AM","4:15:00 PM","2:30:00 PM","3:15:00 PM","5:02:00 PM","3:13:00 PM","7:05:00 PM","11:20:00 AM","10:56:00 PM","4:05:00 PM","4:38:00 PM","5:02:00 PM","7:02:00 PM","8:35:00 PM","5:02:00 PM","11:12:00 AM","3:30:00 PM","9:24:00 PM","7:55:00 PM","8:00:00 AM","2:15:00 PM","7:20:00 PM","10:10:00 AM","5:15:00 PM","8:05:00 PM"],["7:01:00 PM","4:56:00 PM","9:58:00 PM","1:54:00 PM","9:51:00 PM","1:15:00 PM","8:30:00 PM","4:15:00 PM","7:23:00 PM","9:02:00 PM","11:08:00 PM","4:00:00 PM","5:40:00 PM","11:58:00 PM","6:15:00 PM","12:00:00 PM","7:00:00 PM","7:20:00 PM","4:35:00 PM","7:30:00 PM","4:50:00 PM","8:55:00 PM","12:40:00 PM","11:59:00 PM","4:38:00 PM","7:12:00 PM","6:43:00 PM","9:02:00 PM","11:15:00 PM","7:09:00 PM","1:28:00 PM","7:00 PM","11:48:00 PM","11:59:00 PM","11:02:00 AM","5:40:00 PM","11:50:00 PM","1:50:00 PM","7:30:00 PM","11:59:00 PM"],[2,4,4,4,3,2,4,5,3,4,3,3,2,2,3,3,4,3,2,2,4,5,2,5,2,4,5,3,2,5,3,4,3,5,5,4,4,2,2,2],["Friend","Alone","Friend","Friend","Friend","Alone","Alone","Alone","Alone","Friend","Alone","Alone","Alone","Acquaintance","Friend","Alone","Friend","Acquaintance","Acquaintance","Alone","Alone","Alone","Alone","Alone","Alone","Friend","Acquaintance","Friend","Alone","Friend","Alone","Friend","Alone","Friend","Alone","Friend","Friend","Alone","Friend","Alone"],["Self imposed","Self imposed","External","External","External","External","External","Self imposed","External","External","External","Self imposed","Self imposed","Self imposed","Self imposed","External","Self imposed","External","Self imposed","Self imposed","External","External","Self imposed","External","Self imposed","External","External","Self imposed","Self imposed","External","Self imposed","External","External","External","External","External","External","Self imposed","External","Self imposed"],["Cold","Wind","Cold","Warm","Cold","Wind","Wind","Warm","Cold","Cold","Cold","Warm","Cold","Cold","Warm","Warm","Warm","Cold","Wind","Warm","Warm","Cold","Cold","Warm","Warm","Warm","Warm","Cold","Warm","Warm","Warm","Warm","Warm","Cold","Warm","Cold","Warm","Warm","Cold","Cold"],[8.4,9.1,10.3,9.699999999999999,9.800000000000001,9.699999999999999,9,8.800000000000001,7.9,8.9,8.9,9.1,10.2,9.699999999999999,9.699999999999999,7.4,7.4,7.8,9.1,10.9,8.199999999999999,6.1,7.8,9.5,10.1,10.1,10.6,9.699999999999999,7.9,9.800000000000001,7.8,7.8,10.2,10.1,4.5,10.2,8.9,8.199999999999999,8.199999999999999,8.199999999999999],["1:24:00","0:56:00","1:40:00","1:50:00","1:21:00","1:17:00","3:00:00","0:49:00","1:34:00","1:12:00","1:08:00","1:15:00","1:25:00 AM","5:08:00 AM","1:13:00 AM","2:15:00 AM","2:45:00 AM","4:50:00 AM","1:20:00 AM","2:28:00 AM","1:37:00","1:50:00","1:20:00","1:03:00","0:33:00","2:34:00","1:41:00","2:00:00","2:40:00","2:07:00","2:16:00","3:30:00","2:24:00","4:04:00","3:02:00","3:25:00","4:30:00","3:40:00","2:15:00","3:54:00"],[1.4,0.93,1.67,1.83,1.35,1.28,3,0.82,1.57,1.2,1.13,1.25,1.42,5.13,1.22,2.25,2.75,4.83,1.33,2.47,1.62,1.83,1.33,1.05,0.55,2.57,1.68,2,2.67,2.12,2.27,3.5,2.4,4.07,3.03,3.42,4.5,3.67,2.25,3.9],[2.8,3.73,6.67,7.33,4.05,2.57,12,4.08,4.7,4.8,3.4,3.75,2.83,10.27,3.65,6.75,11,14.5,2.67,4.93,6.47,9.17,2.67,5.25,1.1,10.27,8.42,6,5.33,10.58,6.8,14,7.2,20.33,15.17,13.67,18,7.33,4.5,7.8],["Accompanied","Alone","Accompanied","Accompanied","Accompanied","Alone","Alone","Alone","Alone","Accompanied","Alone","Alone","Alone","Accompanied","Accompanied","Alone","Accompanied","Accompanied","Accompanied","Alone","Alone","Alone","Alone","Alone","Alone","Accompanied","Accompanied","Accompanied","Alone","Accompanied","Alone","Accompanied","Alone","Accompanied","Alone","Accompanied","Accompanied","Alone","Accompanied","Alone"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>date<\/th>\n      <th>start_time<\/th>\n      <th>end_time<\/th>\n      <th>focus_score<\/th>\n      <th>company_type<\/th>\n      <th>deadline_type<\/th>\n      <th>weather_type<\/th>\n      <th>sleep_decimal_hour<\/th>\n      <th>duration_time<\/th>\n      <th>duration_decimal_hour<\/th>\n      <th>final_productivity_score<\/th>\n      <th>accompanied<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[4,8,10,11]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"date","targets":1},{"name":"start_time","targets":2},{"name":"end_time","targets":3},{"name":"focus_score","targets":4},{"name":"company_type","targets":5},{"name":"deadline_type","targets":6},{"name":"weather_type","targets":7},{"name":"sleep_decimal_hour","targets":8},{"name":"duration_time","targets":9},{"name":"duration_decimal_hour","targets":10},{"name":"final_productivity_score","targets":11},{"name":"accompanied","targets":12}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="data-visualization-code" class="level3">
+<h3 class="anchored" data-anchor-id="data-visualization-code">Data Visualization Code</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># new mydata object with marker column</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>mydata_marker <span class="ot">&lt;-</span> mydata <span class="sc">|&gt;</span>  </span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># create a new column called "marker" </span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">marker =</span> <span class="fu">paste0</span>(<span class="st">"Type: "</span>, company_type, <span class="st">"&lt;br&gt;"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"Score: "</span>, focus_score, <span class="st">" × "</span>, <span class="st">"Duration (hr): "</span>, duration_decimal_hour, <span class="st">"&lt;br&gt;"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                         <span class="st">"= "</span>, <span class="st">"Final Productivity Score: "</span>, final_productivity_score))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#creating static visualizations for personal data</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>mydata_static <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> mydata_marker,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>                       <span class="fu">aes</span>(<span class="at">x =</span> accompanied,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>                           <span class="at">y =</span> final_productivity_score,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>                           <span class="at">color =</span> accompanied,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>                           <span class="at">text =</span> marker)) <span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_jitter</span>(<span class="at">height =</span> <span class="dv">0</span>, <span class="co">#add geometry of jitter plot, 0 height jitter</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>              <span class="at">width =</span> <span class="fl">0.2</span>, <span class="co">#0.2 jitter width</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>              <span class="at">shape =</span> <span class="dv">20</span>) <span class="sc">+</span> <span class="co">#shape is open circles for the jitter points</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="at">data =</span> mydata_summary, <span class="co">#add a geometry of an error bar from data of mydata_summary</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>                <span class="fu">aes</span>(<span class="at">x =</span> accompanied,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>                    <span class="at">y =</span> mean_score,</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>                    <span class="at">ymin =</span> ci_lower,</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>                    <span class="at">ymax =</span> ci_upper,</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>                    <span class="at">width =</span> <span class="fl">0.12</span>),</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>                    <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> mydata_summary, <span class="co">#add geometry of a point from mydata_summary of the mean productivity score</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>             <span class="fu">aes</span>(<span class="at">x =</span> accompanied,</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>                 <span class="at">y =</span> mean_score),</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>             <span class="at">color =</span> <span class="st">"black"</span>, <span class="co">#point showing the mean is black</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>             <span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Company Type"</span>, <span class="co">#labling the x and y axis and the title</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Final Productivity Score"</span>,</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>       <span class="at">title =</span> <span class="st">"Mean Productivity Score between </span><span class="sc">\n</span><span class="st">Accompanied and Alone study sessions"</span>) <span class="sc">+</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Accompanied"</span> <span class="ot">=</span> <span class="st">"#377b42"</span>, <span class="co">#manual colors for groups </span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Alone"</span> <span class="ot">=</span> <span class="st">"#AA71BA"</span>)) <span class="sc">+</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="co">#using plotly to make the figure interactive</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>mydata_interactive <span class="ot">&lt;-</span> <span class="fu">ggplotly</span>(mydata_static, <span class="at">tooltip =</span> <span class="st">"text"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>( </span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>    <span class="at">font =</span> <span class="fu">list</span>(<span class="at">family =</span> <span class="st">"Times"</span>),</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>    <span class="co"># editing the marker/tooltip/hoverlabel </span></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">hoverlabel =</span> <span class="fu">list</span>(</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>      <span class="co"># editing the font: all goes in a list()</span></span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>      <span class="at">font =</span> <span class="fu">list</span>(</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>        <span class="at">family =</span> <span class="st">"Times"</span>,</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>        <span class="at">size =</span> <span class="dv">13</span>,</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>        <span class="at">color =</span> <span class="st">"#FFFFFF"</span>,</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>        <span class="at">align =</span> <span class="st">"left"</span></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>      )))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="mean-productivity-interactive-figure" class="level3">
+<h3 class="anchored" data-anchor-id="mean-productivity-interactive-figure">Mean Productivity Interactive Figure</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-5ee0a274803664736326" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-5ee0a274803664736326">{"x":{"data":[{"x":[0.90929247858002782,0.97308729812502859,1.1075082890689374,1.1335131652653216,1.0935591883026063,0.87181479278951879,0.87265362124890089,0.92797516454011197,0.9484275631606579,1.1850517667829989,0.94394789570942517,1.1326805677264928,1.1732925540767609,1.1893721970729529,0.91826126398518682,0.87778230644762512,1.1381171975284814,0.95620291754603381,0.91068596411496405],"y":[2.7999999999999998,6.6699999999999999,7.3300000000000001,4.0499999999999998,4.7999999999999998,10.27,3.6499999999999999,11,14.5,2.6699999999999999,10.27,8.4199999999999999,6,10.58,14,20.329999999999998,13.67,18,4.5],"text":["Type: Friend<br>Score: 2 × Duration (hr): 1.4<br>= Final Productivity Score: 2.8","Type: Friend<br>Score: 4 × Duration (hr): 1.67<br>= Final Productivity Score: 6.67","Type: Friend<br>Score: 4 × Duration (hr): 1.83<br>= Final Productivity Score: 7.33","Type: Friend<br>Score: 3 × Duration (hr): 1.35<br>= Final Productivity Score: 4.05","Type: Friend<br>Score: 4 × Duration (hr): 1.2<br>= Final Productivity Score: 4.8","Type: Acquaintance<br>Score: 2 × Duration (hr): 5.13<br>= Final Productivity Score: 10.27","Type: Friend<br>Score: 3 × Duration (hr): 1.22<br>= Final Productivity Score: 3.65","Type: Friend<br>Score: 4 × Duration (hr): 2.75<br>= Final Productivity Score: 11","Type: Acquaintance<br>Score: 3 × Duration (hr): 4.83<br>= Final Productivity Score: 14.5","Type: Acquaintance<br>Score: 2 × Duration (hr): 1.33<br>= Final Productivity Score: 2.67","Type: Friend<br>Score: 4 × Duration (hr): 2.57<br>= Final Productivity Score: 10.27","Type: Acquaintance<br>Score: 5 × Duration (hr): 1.68<br>= Final Productivity Score: 8.42","Type: Friend<br>Score: 3 × Duration (hr): 2<br>= Final Productivity Score: 6","Type: Friend<br>Score: 5 × Duration (hr): 2.12<br>= Final Productivity Score: 10.58","Type: Friend<br>Score: 4 × Duration (hr): 3.5<br>= Final Productivity Score: 14","Type: Friend<br>Score: 5 × Duration (hr): 4.07<br>= Final Productivity Score: 20.33","Type: Friend<br>Score: 4 × Duration (hr): 3.42<br>= Final Productivity Score: 13.67","Type: Friend<br>Score: 4 × Duration (hr): 4.5<br>= Final Productivity Score: 18","Type: Friend<br>Score: 2 × Duration (hr): 2.25<br>= Final Productivity Score: 4.5"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(55,123,66,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(55,123,66,1)"}},"hoveron":"points","name":"Accompanied","legendgroup":"Accompanied","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1.944097677897662,2.1890553187578918,2.095991598814726,1.8955021314322948,1.8471785257570446,1.8597898894920946,1.9252773189917207,1.9823681042529642,1.9146058434620499,2.0848578045144679,1.9968182404525578,1.9996365190483629,2.1687684486620129,2.04820719929412,1.9612113417126238,1.9349952014163136,2.1596785809844734,2.1966917436569928,2.0522761619649827,1.9275624499656261,2.0057086384855212],"y":[3.73,2.5699999999999998,12,4.0800000000000001,4.7000000000000002,3.3999999999999999,3.75,2.8300000000000001,6.75,4.9299999999999997,6.4699999999999998,9.1699999999999999,2.6699999999999999,5.25,1.1000000000000001,5.3300000000000001,6.7999999999999998,7.2000000000000002,15.17,7.3300000000000001,7.7999999999999998],"text":["Type: Alone<br>Score: 4 × Duration (hr): 0.93<br>= Final Productivity Score: 3.73","Type: Alone<br>Score: 2 × Duration (hr): 1.28<br>= Final Productivity Score: 2.57","Type: Alone<br>Score: 4 × Duration (hr): 3<br>= Final Productivity Score: 12","Type: Alone<br>Score: 5 × Duration (hr): 0.82<br>= Final Productivity Score: 4.08","Type: Alone<br>Score: 3 × Duration (hr): 1.57<br>= Final Productivity Score: 4.7","Type: Alone<br>Score: 3 × Duration (hr): 1.13<br>= Final Productivity Score: 3.4","Type: Alone<br>Score: 3 × Duration (hr): 1.25<br>= Final Productivity Score: 3.75","Type: Alone<br>Score: 2 × Duration (hr): 1.42<br>= Final Productivity Score: 2.83","Type: Alone<br>Score: 3 × Duration (hr): 2.25<br>= Final Productivity Score: 6.75","Type: Alone<br>Score: 2 × Duration (hr): 2.47<br>= Final Productivity Score: 4.93","Type: Alone<br>Score: 4 × Duration (hr): 1.62<br>= Final Productivity Score: 6.47","Type: Alone<br>Score: 5 × Duration (hr): 1.83<br>= Final Productivity Score: 9.17","Type: Alone<br>Score: 2 × Duration (hr): 1.33<br>= Final Productivity Score: 2.67","Type: Alone<br>Score: 5 × Duration (hr): 1.05<br>= Final Productivity Score: 5.25","Type: Alone<br>Score: 2 × Duration (hr): 0.55<br>= Final Productivity Score: 1.1","Type: Alone<br>Score: 2 × Duration (hr): 2.67<br>= Final Productivity Score: 5.33","Type: Alone<br>Score: 3 × Duration (hr): 2.27<br>= Final Productivity Score: 6.8","Type: Alone<br>Score: 3 × Duration (hr): 2.4<br>= Final Productivity Score: 7.2","Type: Alone<br>Score: 5 × Duration (hr): 3.03<br>= Final Productivity Score: 15.17","Type: Alone<br>Score: 2 × Duration (hr): 3.67<br>= Final Productivity Score: 7.33","Type: Alone<br>Score: 2 × Duration (hr): 3.9<br>= Final Productivity Score: 7.8"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(170,113,186,1)","opacity":1,"size":5.6692913385826778,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(170,113,186,1)"}},"hoveron":"points","name":"Alone","legendgroup":"Alone","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[1,2],"y":[9.0999999999999996,5.9000000000000004],"text":["Type: Accompanied<br>Mean: 9.1<br>95% Confidence interval for mean: 11.4 - 6.8","Type: Alone<br>Mean: 5.9<br>95% Confidence interval for mean: 7.3 - 4.5"],"type":"scatter","mode":"lines+markers","opacity":1,"line":{"color":"transparent"},"error_y":{"array":[2.3000000000000007,1.3999999999999995],"arrayminus":[2.2999999999999998,1.4000000000000004],"type":"data","width":24.436363636363648,"symmetric":false,"color":"rgba(0,0,0,1)"},"showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","marker":{"autocolorscale":false,"color":"rgba(0,0,0,1)","opacity":1,"size":7.559055118110237,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,0,0,1)"}},"hoveron":"points","frame":null}],"layout":{"margin":{"t":43.762557077625573,"r":7.3059360730593621,"b":40.182648401826491,"l":37.260273972602747},"font":{"color":"rgba(0,0,0,1)","family":"Times","size":14.611872146118724},"title":{"text":"Mean Productivity Score between <br />Accompanied and Alone study sessions","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.40000000000000002,2.6000000000000001],"tickmode":"array","ticktext":["Accompanied","Alone"],"tickvals":[1,2],"categoryorder":"array","categoryarray":["Accompanied","Alone"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Company Type","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[0.13850000000000018,21.291499999999999],"tickmode":"array","ticktext":["5","10","15","20"],"tickvals":[5,10,15,20],"categoryorder":"array","categoryarray":["5","10","15","20"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Final Productivity Score","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative","hoverlabel":{"font":{"family":"Times","size":13,"color":"#FFFFFF","align":"left"}}},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"a0fc73657c4b":{"x":{},"y":{},"colour":{},"text":{},"type":"scatter"},"a0fc7eb62a50":{"x":{},"y":{},"colour":{},"text":{},"ymin":{},"ymax":{},"width":{}},"a0fc30635f30":{"x":{},"y":{},"colour":{},"text":{}}},"cur_data":"a0fc73657c4b","visdat":{"a0fc73657c4b":["function (y) ","x"],"a0fc7eb62a50":["function (y) ","x"],"a0fc30635f30":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="affective-data-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="affective-data-visualization">Affective Data Visualization</h3>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

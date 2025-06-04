@@ -11,7 +11,7 @@ execute:
   warning: false # make sure warnings don't show up
 ---
 
-A project for UCSB ENV S 193DS. I collected data on my study habits with several variables to answer my main question: Am I more productive when I work by myself or with at least one other person?
+A project for UCSB ENV S 193DS. I collected data on my study habits with several variables to answer my main question: Am I more productive when I work by myself or with at least one other person? 
 
 Use side navigation to jump to code or interactive figures.
 
