@@ -1,9 +1,0 @@
----
-title: "This website!"
-author: "Jessi Rumkin"
-date: 05-28-2025
-categories: [Quarto, UCSB]
-format: html
----
-
-I created this website using RStudio and Quarto websites, and published it using GitHub pages.

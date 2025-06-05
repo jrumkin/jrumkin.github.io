@@ -8,50 +8,38 @@ toc: true
 
 ##### Hello!
 
-I'm currently a student at Univserity of California, Santa Barbara and I have loved my time here. I've lived by the beach for most of my life and living in Goleta has been the best place to find so many opportunities to follow my professional and personal passions.
+I'm currently a student at Univserity of California, Santa Barbara and I have loved my time here. I've lived by the beach for most of my life and living in Goleta has been the best place to find so many opportunities to follow my professional and personal passions. Here are some photos I've taken over the past two years of my favorite spots and memories. I love photography and always wish I had my nicer camera on me, but my phone usually does the trick!
 
-```{r}
-#| fig-cap: "Stork Tower at UCSB"
-#| fig-cap-location: bottom
-#| fig-width: 100
-```
+![Stork Tower at UCSB](photos/stork_tower.jpeg){width="8in"}
 
-![Stork Tower at UCSB](photos/stork_tower.jpeg)
-
-```{r}
-#| fig-width: 100
-#| fig-cap-location: bottom
-#| fig-cap: "Isla Vista sunset"
-```
-
-![Isla Vista Sunset](photos/IV_sunset.jpg)
+![Isla Vista Sunset](photos/IV_sunset.jpg){width="4in"}
 
 ### Hiking
 
-I really love hiking, and it's usually for the purpose of getting outside and eating lunch in a much cooler spot.
+I really love hiking, and it's usually for the purpose of getting outside and eating lunch in a much cooler spot. Intentionally getting outside is sometimes a much needed reset, and the views are always amazing even if I've seen it a dozen times.
 
-![Sunrise hike in Southern California](photos/sunrise_sandstone.jpeg){.img-fluid}
+![Sunrise hike in Southern California](photos/sunrise_sandstone.jpeg){.img-fluid width="4in"}
 
-![Southern California hike with some friends](photos/camping_hike.JPG){.img-fluid}
+![Southern California hike with some friends](photos/camping_hike.JPG){.img-fluid width="4in"}
 
-![Sunrise hike with my NPS interns](photos/nps_hike_rock.jpg){.img-fluid}
+![Sunrise hike with my NPS interns](photos/nps_hike_rock.jpg){.img-fluid width="4in"}
 
 ### Chasing the snow
 
-One of the only things I can't get on the coast of southern California is snow. I have found some of my absolute favorite spots around Mammoth and Mono County, where I also love to snowboard as much as I can.
+One of the only things I can't get on the coast of southern California is snow. I have found some of my absolute favorite spots around Mammoth and Mono County, where I also love to snowboard as much as I can. It is a super fun way to exercise and I love practicing new skills so it stays interesting.
 
-![McLeod Lake in the spring](photos/McLeod.jpeg)
+![McLeod Lake in the spring](photos/McLeod.jpeg){width="5.33in"}
 
-![Convict lake in early spring](photos/convict_lake.jpeg)
+![Convict lake in early spring](photos/convict_lake.jpeg){width="5.33in"}
 
-![Friend trip to enjoy fresh snow](photos/mammoth_stump.jpg)
+![Friend trip to enjoy fresh snow](photos/mammoth_stump.jpg){width="4in"}
 
-![View on a snowboarding trip](photos/snowboarding_view.jpg)
+![View on a snowboarding trip](photos/snowboarding_view.jpg){width="6.67in"}
 
 ### Shi
 
-And finally, my two favorite pictures of my brother's dog. She is the cutest thing in the world and who doesn't like dog pictures.
+And finally, my two favorite pictures of my brother's dog Shi because she is the cutest dog ever and who doesn't like dog pictures. She's super smart when she wants to be, but that isn't always the choice she makes.
 
-![Shi playing in the snow](photos/shi_snow.jpg)
+![Shi playing in the snow](photos/shi_snow.jpg){width="4in"}
 
-![Shi very oddly playing in the snow](photos/shi.jpg)
+![Shi very oddly playing in the snow](photos/shi.jpg){width="4in"}

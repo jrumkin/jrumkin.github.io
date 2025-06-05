@@ -13,13 +13,38 @@ This group project culminated in a symposium to present our posters and digital 
 
 ## Poster
 
-![GIS Research Poster](176C%20Poster.jpg)
+[![Fig. 1 - GIS Research Poster](176C%20Poster.jpg)](GIS-poster.pdf)
 
-Open Poster in a new tab:
-[View the PDF](GIS-poster.pdf){target="_blank"}
-
-
+Open Poster in a new tab: [View the PDF](GIS-poster.pdf){target="_blank"}
 
 ## Digital Artifact: Esri Story Map
 
 See our full report in the Esri Story Map: <https://arcg.is/1Tf0vS>
+
+## Brief Description
+
+Lahar Background Lahars are an important and destructive subset of mudflows that can occur with composite volcano activity. Ash, water, and debris travel at rates of up to 30 m/s, reaching as far as 100km from the source (Thouret et al., 2020). These events are extremely dangerous and put surrounding populations at high risk of property damage, injury, and even death.
+
+Three arrays of AFMs currently exist on Mt. Ruapehu, ranging across the Eastern side of the volcano (fig. 2). Limited information is available on the suitability criteria for existing installation, but existing literature suggests that factors influencing site locations are slope angel, distance from lahar danger zones, surrounding land use, and accessibility (Johnson et al., 2023; Sanderson et al., 2021).![Fig. 3 - Current AFM sites and predicted lahar risk zones](lahar_info.png){width="5in"}
+
+## Research Question
+
+**What are the optimal locations for new arrays of acoustic flow monitors around Mt. Ruapehu, New Zealand?** Our research synthesizes existing knowledge and GIS techniques to determine up to optimal locations for a new array of sensors around Mt. Ruapehu, New Zealand.
+
+## Results
+
+**Key Findings**
+
+-   The southwestern side of the mountain had the highest suitability, with 5 ideal locations for new arrays (fig. 3)
+
+-   Suitability is highest near roads, buildings, and high lahar risk zones, but away from the existing set of acoustic flow monitors (fig. 3)
+
+![Fig. 3 - Suggested regions for new AFM arrays](Final_map_storymap.png)
+
+### 
+
+## Acknowledgements
+
+Thank you to Dr. Peter Kedron and the UCSB Geography Department fro making this project possible,
+
+And a special thank you to the others in my research team: Angela Halim, Max Larrabee, and Roo Swain for working so hard on this project.

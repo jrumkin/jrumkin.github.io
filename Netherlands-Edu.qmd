@@ -3,6 +3,6 @@ title: "Netherlands Education"
 format: html
 ---
 
-(This is a page that will go over what I learned while studying abroad in the Netherlands, I want to update it as I go)
-
 ## Coming Soon!
+
+I will be finishing my degree at Utrecht University in the Netherlands, so this page will be updated as I have things to share.

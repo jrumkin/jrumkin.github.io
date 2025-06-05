@@ -172,6 +172,13 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#poster" id="toc-poster" class="nav-link active" data-scroll-target="#poster">Poster</a></li>
   <li><a href="#digital-artifact-esri-story-map" id="toc-digital-artifact-esri-story-map" class="nav-link" data-scroll-target="#digital-artifact-esri-story-map">Digital Artifact: Esri Story Map</a></li>
+  <li><a href="#brief-description" id="toc-brief-description" class="nav-link" data-scroll-target="#brief-description">Brief Description</a></li>
+  <li><a href="#research-question" id="toc-research-question" class="nav-link" data-scroll-target="#research-question">Research Question</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  </ul></li>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
   </ul>
 </nav>
     </div>
@@ -220,8 +227,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="poster">Poster</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="176C Poster.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="GIS Research Poster"><img src="176C Poster.jpg" class="img-fluid figure-img" alt="GIS Research Poster"></a></p>
-<figcaption>GIS Research Poster</figcaption>
+<p><img src="176C Poster.jpg" class="img-fluid figure-img"></p>
+<figcaption>Fig. 1 - GIS Research Poster</figcaption>
 </figure>
 </div>
 <p>Open Poster in a new tab: <a href="GIS-poster.pdf" target="_blank">View the PDF</a></p>
@@ -229,6 +236,37 @@ ul.task-list li input[type="checkbox"] {
 <section id="digital-artifact-esri-story-map" class="level2">
 <h2 class="anchored" data-anchor-id="digital-artifact-esri-story-map">Digital Artifact: Esri Story Map</h2>
 <p>See our full report in the Esri Story Map: <a href="https://arcg.is/1Tf0vS" class="uri">https://arcg.is/1Tf0vS</a></p>
+</section>
+<section id="brief-description" class="level2">
+<h2 class="anchored" data-anchor-id="brief-description">Brief Description</h2>
+<p>Lahar Background Lahars are an important and destructive subset of mudflows that can occur with composite volcano activity. Ash, water, and debris travel at rates of up to 30 m/s, reaching as far as 100km from the source (Thouret et al., 2020). These events are extremely dangerous and put surrounding populations at high risk of property damage, injury, and even death.</p>
+<p>Three arrays of AFMs currently exist on Mt. Ruapehu, ranging across the Eastern side of the volcano (fig.&nbsp;2). Limited information is available on the suitability criteria for existing installation, but existing literature suggests that factors influencing site locations are slope angel, distance from lahar danger zones, surrounding land use, and accessibility (Johnson et al., 2023; Sanderson et al., 2021).<img src="lahar_info.png" class="img-fluid" style="width:5in" alt="Fig. 3 - Current AFM sites and predicted lahar risk zones"></p>
+</section>
+<section id="research-question" class="level2">
+<h2 class="anchored" data-anchor-id="research-question">Research Question</h2>
+<p><strong>What are the optimal locations for new arrays of acoustic flow monitors around Mt. Ruapehu, New Zealand?</strong> Our research synthesizes existing knowledge and GIS techniques to determine up to optimal locations for a new array of sensors around Mt. Ruapehu, New Zealand.</p>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<p><strong>Key Findings</strong></p>
+<ul>
+<li><p>The southwestern side of the mountain had the highest suitability, with 5 ideal locations for new arrays (fig.&nbsp;3)</p></li>
+<li><p>Suitability is highest near roads, buildings, and high lahar risk zones, but away from the existing set of acoustic flow monitors (fig.&nbsp;3)</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="Final_map_storymap.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Fig. 3 - Suggested regions for new AFM arrays"><img src="Final_map_storymap.png" class="img-fluid figure-img" alt="Fig. 3 - Suggested regions for new AFM arrays"></a></p>
+<figcaption>Fig. 3 - Suggested regions for new AFM arrays</figcaption>
+</figure>
+</div>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
+</section>
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>Thank you to Dr.&nbsp;Peter Kedron and the UCSB Geography Department fro making this project possible,</p>
+<p>And a special thank you to the others in my research team: Angela Halim, Max Larrabee, and Roo Swain for working so hard on this project.</p>
 
 
 </section>
@@ -655,7 +693,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","descPosition":"bottom","loop":false,"selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","loop":false,"openEffect":"zoom"});
 (function() {
   let previousOnload = window.onload;
   window.onload = () => {

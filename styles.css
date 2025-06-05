@@ -1,1 +1,23 @@
 /* css styles */
+
+// colors
+$purple: #9900FF
+$cream: #FBF9F3
+$dark-grey: #64605f
+
+// Base document colors
+$navbar-bg: $purple;
+$navbar-hl: $cream;
+$body-bg: $cream;
+$link-color: $purple; 
+
+/*-- scss:rules --*/
+
+h1, h2 {
+  letter-spacing: 5px;
+  font-weight: 800; // Google fonts tells you which weights your chosen font family allows for!
+  
+.navbar-brand img { 
+  max-height: 40px;
+  width: auto;
+}

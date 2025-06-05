@@ -1,0 +1,16 @@
+/*-- scss:defaults --*/
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+// colors
+$purple: #7A5892;
+$cream: #FBF9F3;
+$white: #FFF;
+
+// Base document colors using quarto pre-defined variables
+$navbar-bg: $purple;
+$navbar-hl: $white;
+$body-bg: $cream;
+
+

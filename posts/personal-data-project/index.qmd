@@ -5,7 +5,7 @@ author: "Jessi Rumkin"
 date: 05-28-2025
 categories: [RStudio, Data Science, UCSB]
 format: html
-toc: true
+toc: true #sidenav
 execute:
   message: false # make sure messages don't show up
   warning: false # make sure warnings don't show up
@@ -20,15 +20,14 @@ Use side navigation to jump to code or interactive figures.
 ```{r}
 #| label: Set up code
 
-library(tidyverse)
-library(here)
-library(gt)
-library(janitor)
-library(readxl)
-library(plotly)
-library(DT)
+library(tidyverse) #package for making R easier to use, includes many packages
+library(here) #package for file management
+library(gt) #package for making tables
+library(janitor) #package to clean data
+library(plotly) #package for making interactive figures
+library(DT) #package for making interactive tables
 
-mydata <- read.csv("C:/Users/jlrum/MyGit/jrumkin.github.io/posts/personal-data-project/mydata.csv")
+mydata <- read.csv("C:/Users/jlrum/MyGit/jrumkin.github.io/posts/personal-data-project/mydata.csv") #read in mydata file
 
 ```
 
@@ -44,11 +43,21 @@ mydata_summary <-  mydata |> #make an object called mydata_summary using mydata 
             ci_lower = round(mean_score - 1.96 * (sd(final_productivity_score)/ sqrt(length(final_productivity_score))),digits = 1), #find lower confidence interval at 95%
             ci_upper = round(mean_score + 1.96 * (sd(final_productivity_score) / sqrt(length(final_productivity_score))),digits = 1) #find upper confidence interval at 95%
   ) |> 
-  mutate(marker = paste0("Type: ", accompanied, "<br>",
+  mutate(marker = paste0("Type: ", accompanied, "<br>", #adding a column called marker which will be called on later by the interactive figure to display the mean and confidence interval
                          "Mean: ", mean_score, "<br>",
-                         "95% Confidence interval for mean: ", ci_upper, " - ", ci_lower))
+                         "95% Confidence interval for mean: ", ci_upper, " - ", ci_lower)) 
 
 ```
+
+::: {.callout-note collapse="true"}
+## Note on the Marker Column
+
+This column is created to be the hover-text/tooltip in the interactive figure. This marker column uses defined "text", defined line breaks "<br>", and response variables that call to an existing field.
+
+Ex: "Type: " will print exaclty as that and be the first thing in the marker. Next is accompanied, which calls on that field and will print "Accompanied" or "Alone" depending on where the curser is hovering.
+
+The mutate function to create a marker column is used again in the [Data Visualization Code]
+:::
 
 ### Interactive data table
 
@@ -73,7 +82,7 @@ Focus Score was self determined using this guideline: (1 is the lowest, 5 is the
 :::
 
 ```{r}
-#Using DT to create an interactive table
+#Using package DT to create an interactive table
 datatable(data = mydata)
 
 
@@ -86,37 +95,37 @@ datatable(data = mydata)
 
 # new mydata object with marker column
 mydata_marker <- mydata |>  
-  
-  # create a new column called "marker" 
+  # create a new column/field called marker 
   mutate(marker = paste0("Type: ", company_type, "<br>",
                          "Score: ", focus_score, " × ", "Duration (hr): ", duration_decimal_hour, "<br>",
-                         "= ", "Final Productivity Score: ", final_productivity_score))
+                         "= ", "Final Productivity Score: ", final_productivity_score)) #this marker will be displayed when the cursur hovers over a data point in the interactive figure. It displays the data values and how they are used to calculate the productivity score, which is the value each data point is being plotted with
 
 
 ```
 
 ```{r}
+#| label: Code for creating the visualization
 
 #creating static visualizations for personal data
 
-mydata_static <- ggplot(data = mydata_marker,
-                       aes(x = accompanied,
-                           y = final_productivity_score,
-                           color = accompanied,
-                           text = marker)) +
+mydata_static <- ggplot(data = mydata_marker, #using ggplot to create a static figure
+                       aes(x = accompanied, #x axis is by accompanied group
+                           y = final_productivity_score, #y axis is by final productivity score
+                           color = accompanied, #color the data by accompanied group
+                           text = marker)) + #this text field is not used in ggplot directly, but will be called on later by plotly to create the hover-text. This is saying the hover-text should display the marker field - which was created earlier for this purpose
   geom_jitter(height = 0, #add geometry of jitter plot, 0 height jitter
               width = 0.2, #0.2 jitter width
               shape = 20) + #shape is open circles for the jitter points
   geom_errorbar(data = mydata_summary, #add a geometry of an error bar from data of mydata_summary
-                aes(x = accompanied,
-                    y = mean_score,
-                    ymin = ci_lower,
-                    ymax = ci_upper,
-                    width = 0.12),
-                    color = "black") +
+                aes(x = accompanied, #x axis by accompanied
+                    y = mean_score, # y axis by average productivity scores
+                    ymin = ci_lower, #error bar lower
+                    ymax = ci_upper, #error bar upper
+                    width = 0.12), #manual width of the bars
+                    color = "black") + #color them black for visual ease
   geom_point(data = mydata_summary, #add geometry of a point from mydata_summary of the mean productivity score
-             aes(x = accompanied,
-                 y = mean_score),
+             aes(x = accompanied, #x axis by accompnied
+                 y = mean_score), # y axis is the mean productivity score
              color = "black", #point showing the mean is black
              size = 2) +
   labs(x = "Company Type", #labling the x and y axis and the title
@@ -124,18 +133,18 @@ mydata_static <- ggplot(data = mydata_marker,
        title = "Mean Productivity Score between \nAccompanied and Alone study sessions") +
   scale_color_manual(values = c("Accompanied" = "#377b42", #manual colors for groups 
                                 "Alone" = "#AA71BA")) +
-  theme_minimal() +
-  theme(legend.position = "none")
+  theme_minimal() + #minimal theme
+  theme(legend.position = "none") #remove legend because it's redundent
 
 
-#using plotly to make the figure interactive
+#using plotly package to make the figure interactive
 mydata_interactive <- ggplotly(mydata_static, tooltip = "text") |> 
-  layout( 
-    font = list(family = "Times"),
+  layout( #edit the layout of the figure and details
+    font = list(family = "Times"), #use Times fonts for the figure axis and title
   
-    # editing the marker/tooltip/hoverlabel 
+    # editing the marker/tooltip/hover-text 
     hoverlabel = list(
-      # editing the font: all goes in a list()
+      # editing the font for the marker hover-text
       font = list(
         family = "Times",
         size = 13,
