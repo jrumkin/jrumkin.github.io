@@ -32,7 +32,8 @@ website:
           - icon: envelope
             text: Open email client
             href: mailto:jrumkin@ucsb.edu
-          - text: "jrumkin@ucsb.edu"
+          - icon: envelope
+            text: "jrumkin@ucsb.edu"
           - icon: linkedin
             text: "LinkedIn"
             href: https://www.linkedin.com/in/jessica-rumkin-80b59129a/

@@ -7,46 +7,18 @@
     "text": "I Completed an additional emphasis and outside concentration at the University of California, Santa Barbara for Geographic Spatial Science.\nThe most valuable courses I took to for the additional emphasis were:"
   },
   {
+    "objectID": "UCSB-GIS.html#research-project",
+    "href": "UCSB-GIS.html#research-project",
+    "title": "UCSB Spatial Science",
+    "section": "Research Project",
+    "text": "Research Project\nMy biggest accomplishment was the capstone research project, which culminated in the GEOG 176C Symposium where my group members and I got to present our research poster to students, faculty, staff, and professionals in the field.\nSee the details in the navbar projects &gt; Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand\n\n\n\nOur Research Poster - click to open PDF\n\n\nAlso see our Digital Artifact on Esri Story Maps for the full report details.\nA special thanks to Dr. Peter Kedron, the UCSB Geography Department, and my amazing research group that made this project possible."
+  },
+  {
     "objectID": "Resume.html",
     "href": "Resume.html",
     "title": "Resume",
     "section": "",
     "text": "A page that will have a visual resume on the page, and a link to download a resume."
-  },
-  {
-    "objectID": "posts/gis-lahar/gis-lahar.html",
-    "href": "posts/gis-lahar/gis-lahar.html",
-    "title": "Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand",
-    "section": "",
-    "text": "Capstone project for the UCSB 176A-C course series on geographic information systems and science (GIS).\nThis group project culminated in a symposium to present our posters and digital artifacts to other students, professors, geography department admin, and professionals. We developed a research project and used ArcGIS Pro to answer spatial questions."
-  },
-  {
-    "objectID": "Netherlands-Edu.html",
-    "href": "Netherlands-Edu.html",
-    "title": "Netherlands Education",
-    "section": "",
-    "text": "(This is a page that will go over what I learned while studying abroad in the Netherlands, I want to update it as I go)"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "Hello!\nI’m currently a student at Univserity of California, Santa Barbara and I have loved my time here. I’ve lived by the beach for most of my life and living in Goleta has been the best place to find so many opportunities to follow my professional and personal passions. Here are some photos I’ve taken over the past two years of my favorite spots and memories. I love photography and always wish I had my nicer camera on me, but my phone usually does the trick!\n\n\n\nStork Tower at UCSB\n\n\n\n\n\nIsla Vista Sunset\n\n\n\n\nHiking\nI really love hiking, and it’s usually for the purpose of getting outside and eating lunch in a much cooler spot. Intentionally getting outside is sometimes a much needed reset, and the views are always amazing even if I’ve seen it a dozen times.\n\n\n\nSunrise hike in Southern California\n\n\n\n\n\nSouthern California hike with some friends\n\n\n\n\n\nSunrise hike with my NPS interns\n\n\n\n\nChasing the snow\nOne of the only things I can’t get on the coast of southern California is snow. I have found some of my absolute favorite spots around Mammoth and Mono County, where I also love to snowboard as much as I can. It is a super fun way to exercise and I love practicing new skills so it stays interesting.\n\n\n\nMcLeod Lake in the spring\n\n\n\n\n\nConvict lake in early spring\n\n\n\n\n\nFriend trip to enjoy fresh snow\n\n\n\n\n\nView on a snowboarding trip\n\n\n\n\nShi\nAnd finally, my two favorite pictures of my brother’s dog Shi because she is the cutest dog ever and who doesn’t like dog pictures. She’s super smart when she wants to be, but that isn’t always the choice she makes.\n\n\n\nShi playing in the snow\n\n\n\n\n\nShi very oddly playing in the snow"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Jessi Rumkin",
-    "section": "",
-    "text": "Hello! My name is Jessica Rumkin, but I often go by Jessi.\nThis is my personal website that I built. Check out the Projects page to see a wide variety of experiences, the GitHub link to see the code for this site, or the About page to see some really pretty hiking photos.\n\nI’m currently studying at University fo California, Santa Barbara (UCSB) for a BS in Environmental Studies with an additional emphasis on Geographic Spatial Science. I’ll be finishing my degree at Utrecht University in the Netherlands next fall focusing on restoration and agroecology innovation.\nAt my current position as Growing Grounds Coordinator for a UCSB club and non-profit called Your Children’s Trees I co-manage a nursery of 350+ trees, mostly Coast Live oak, for local urban reforestation and ecosystem restoration. I also manage weekly events to teach and supervise volunteers to maximize their learning and completion of tasks.\nPlease see the contact links for all the ways to reach me!"
-  },
-  {
-    "objectID": "posts/Bren Environmental Studies Fellowship/index.html",
-    "href": "posts/Bren Environmental Studies Fellowship/index.html",
-    "title": "Bren Environmental Studies Fellowship",
-    "section": "",
-    "text": "The Bren Environmental Studies Fellowship is a partnership between UCSB’s Environmental Studies department and the Bren graduate school on UCSB campus.\nSee here for my participant bio, and here for more program information.\n\nBeing accepted into this fellowship opened opportunties that helped me further my professional and academic development. Being a part of the Educational Opportunity Program at UCSB as a first generation college student has come with its challenges, but the community and support from the other fellows helped me face and grow from them.\nThe fellowship created structured opportunities to work on networking skills, resume writing, meet with faculty, and set up mentor meetings with Bren students, faculty, and field professionals.\nA special thanks to the Program Director, Heather Stanford, for all her hard work in managing the program and always being in my corner."
   },
   {
     "objectID": "posts/personal-data-project/index.html",
@@ -56,60 +28,53 @@
     "text": "A project for UCSB ENV S 193DS. I collected data on my study habits with several variables to answer my main question: Am I more productive when I work by myself or with at least one other person?\nUse side navigation to jump to code or interactive figures.\n\nSet Up\n\nlibrary(tidyverse) #package for making R easier to use, includes many packages\nlibrary(here) #package for file management\nlibrary(gt) #package for making tables\nlibrary(janitor) #package to clean data\nlibrary(plotly) #package for making interactive figures\nlibrary(DT) #package for making interactive tables\n\nmydata &lt;- read.csv(\"C:/Users/jlrum/MyGit/jrumkin.github.io/posts/personal-data-project/mydata.csv\") #read in mydata file\n\n\n#summarizing personal data\nmydata_summary &lt;-  mydata |&gt; #make an object called mydata_summary using mydata file\n  group_by(accompanied) |&gt; #group the sumary by company type\n  summarise(mean_score = round(mean(final_productivity_score),digits = 1), #find mean\n            sd = round(sd(final_productivity_score), digits = 1), #find standard deviation\n            se = round((sd(final_productivity_score)/sqrt(length(final_productivity_score))),digits = 1), #find standard error\n            ci_lower = round(mean_score - 1.96 * (sd(final_productivity_score)/ sqrt(length(final_productivity_score))),digits = 1), #find lower confidence interval at 95%\n            ci_upper = round(mean_score + 1.96 * (sd(final_productivity_score) / sqrt(length(final_productivity_score))),digits = 1) #find upper confidence interval at 95%\n  ) |&gt; \n  mutate(marker = paste0(\"Type: \", accompanied, \"&lt;br&gt;\", #adding a column called marker which will be called on later by the interactive figure to display the mean and confidence interval\n                         \"Mean: \", mean_score, \"&lt;br&gt;\",\n                         \"95% Confidence interval for mean: \", ci_upper, \" - \", ci_lower)) \n\n\n\n\n\n\n\nNote on the Marker Column\n\n\n\n\n\nThis column is created to be the hover-text/tooltip in the interactive figure. This marker column uses defined “text”, defined line breaks “”, and response variables that call to an existing field.\nEx: “Type:” will print exaclty as that and be the first thing in the marker. Next is accompanied, which calls on that field and will print “Accompanied” or “Alone” depending on where the curser is hovering.\nThe mutate function to create a marker column is used again in the Data Visualization Code\n\n\n\n\n\nInteractive data table\n\n\n\n\n\n\nBrief data dictionary for mydata\n\n\n\n\n\nResponse Variable: Final Productivity Score Pre-selected predictor variable: accompanied (Accompanied or Alone)\nOther variables collected: Company type (Alone, Friend, or Acquaintance), Sleep (decimal hour), deadline type (self imposed or external), and weather (Warm, Cold, Wind, or Rain)\nFocus Score was self determined using this guideline: (1 is the lowest, 5 is the highest, discrete numeric data)\n1: Constantly distracted + brain fog, low critical thinking applied\n2: Frequently distracted, trouble staying on task, bored, needed to re-do or re-read instructions many times\n3: Occasionally distracted, able to return to the task at hand without severe backtracking\n4: Mostly focused, some distractions but they are usually intentional breaks\n5: Highly focused, very few to no distractions, efficient workflow\n\n\n\n\n#Using package DT to create an interactive table\ndatatable(data = mydata)\n\n\n\n\n\n\n\nData Visualization Code\n\n# new mydata object with marker column\nmydata_marker &lt;- mydata |&gt;  \n  # create a new column/field called marker \n  mutate(marker = paste0(\"Type: \", company_type, \"&lt;br&gt;\",\n                         \"Score: \", focus_score, \" × \", \"Duration (hr): \", duration_decimal_hour, \"&lt;br&gt;\",\n                         \"= \", \"Final Productivity Score: \", final_productivity_score)) #this marker will be displayed when the cursur hovers over a data point in the interactive figure. It displays the data values and how they are used to calculate the productivity score, which is the value each data point is being plotted with\n\n\n#creating static visualizations for personal data\n\nmydata_static &lt;- ggplot(data = mydata_marker, #using ggplot to create a static figure\n                       aes(x = accompanied, #x axis is by accompanied group\n                           y = final_productivity_score, #y axis is by final productivity score\n                           color = accompanied, #color the data by accompanied group\n                           text = marker)) + #this text field is not used in ggplot directly, but will be called on later by plotly to create the hover-text. This is saying the hover-text should display the marker field - which was created earlier for this purpose\n  geom_jitter(height = 0, #add geometry of jitter plot, 0 height jitter\n              width = 0.2, #0.2 jitter width\n              shape = 20) + #shape is open circles for the jitter points\n  geom_errorbar(data = mydata_summary, #add a geometry of an error bar from data of mydata_summary\n                aes(x = accompanied, #x axis by accompanied\n                    y = mean_score, # y axis by average productivity scores\n                    ymin = ci_lower, #error bar lower\n                    ymax = ci_upper, #error bar upper\n                    width = 0.12), #manual width of the bars\n                    color = \"black\") + #color them black for visual ease\n  geom_point(data = mydata_summary, #add geometry of a point from mydata_summary of the mean productivity score\n             aes(x = accompanied, #x axis by accompnied\n                 y = mean_score), # y axis is the mean productivity score\n             color = \"black\", #point showing the mean is black\n             size = 2) +\n  labs(x = \"Company Type\", #labling the x and y axis and the title\n       y = \"Final Productivity Score\",\n       title = \"Mean Productivity Score between \\nAccompanied and Alone study sessions\") +\n  scale_color_manual(values = c(\"Accompanied\" = \"#377b42\", #manual colors for groups \n                                \"Alone\" = \"#AA71BA\")) +\n  theme_minimal() + #minimal theme\n  theme(legend.position = \"none\") #remove legend because it's redundent\n\n\n#using plotly package to make the figure interactive\nmydata_interactive &lt;- ggplotly(mydata_static, tooltip = \"text\") |&gt; \n  layout( #edit the layout of the figure and details\n    font = list(family = \"Times\"), #use Times fonts for the figure axis and title\n  \n    # editing the marker/tooltip/hover-text \n    hoverlabel = list(\n      # editing the font for the marker hover-text\n      font = list(\n        family = \"Times\",\n        size = 13,\n        color = \"#FFFFFF\",\n        align = \"left\"\n      )))\n\n\n\nMean Productivity Interactive Figure\n\n\n\n\n\n\n\n\nAffective Data Visualization\n\n\n\nAffective Data Visualization\n\n\n\nArtist Statement\nThis data visualization shows my personal data on study habits and productivity throughout the Spring 2025 quarter. The green doodles are data points for when I studied with other people and the purple doodles are data points when I studied on my own, and each dot around or in each doodle represents my focus score for that study session. I took a lot of inspiration from Stefanie Posavec and Giorgia Lupi’s Dear Data project for representing data points as small illustrations. I drew the visualization on my iPad using an app called ProCreate. I started by putting a few of my ideas onto one page to see what I liked and honed the idea from there. I drew the mountain range first to represent the slope of my productivity scores over time. I then drew the data points based off the main jitter and mean plot created in Problem 1b and then drew the illustrations last while matching them to actual observations."
   },
   {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "Projects",
+    "objectID": "posts/Bren Environmental Studies Fellowship/index.html",
+    "href": "posts/Bren Environmental Studies Fellowship/index.html",
+    "title": "Bren Environmental Studies Fellowship",
     "section": "",
-    "text": "A wide variety of personal and professional projects. See the side navigation to explore and filter by category.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAcoustic flow monitor arrays on Mt. Ruapehu, New Zealand\n\n\n\n\n\nA capstone project using ArcGIS Pro\n\n\n\n\n\nMay 25, 2025\n\n\nJessi Rumkin\n\n\n\n\n\n\n\n\n\n\n\n\nBren Environmental Studies Fellowship\n\n\n\n\n\n\nUCSB\n\n\nBren\n\n\n\nA professional development fellowship to link UCSB environmental studies students to the Bren envrironmental graduate school.\n\n\n\n\n\nMay 28, 2025\n\n\nJessi Rumkin\n\n\n\n\n\n\n\n\n\n\n\n\nPersonal Data Project\n\n\n\n\n\n\nRStudio\n\n\nData Science\n\n\nUCSB\n\n\n\nA data science project based on data I collected on my life.\n\n\n\n\n\nMay 28, 2025\n\n\nJessi Rumkin\n\n\n\n\n\n\nNo matching items"
+    "text": "The Bren Environmental Studies Fellowship is a partnership between UCSB’s Environmental Studies department and the Bren graduate school on UCSB campus.\nSee here for my participant bio, and here for more program information.\n\nBeing accepted into this fellowship opened opportunties that helped me further my professional and academic development. Being a part of the Educational Opportunity Program at UCSB as a first generation college student has come with its challenges, but the community and support from the other fellows helped me face and grow from them.\nThe fellowship created structured opportunities to work on networking skills, resume writing, meet with faculty, and set up mentor meetings with Bren students, faculty, and field professionals.\nA special thanks to the Program Director, Heather Stanford, for all her hard work in managing the program and always being in my corner."
   },
   {
-    "objectID": "UCSB-enviro.html",
-    "href": "UCSB-enviro.html",
-    "title": "UCSB Environmental Studies",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Jessi Rumkin",
     "section": "",
-    "text": "My main degree from University of California, Santa Barbara is a B.S. Environmental Studies (expected June 2026).\nI chose UCSB because this program allowed and encouraged me to explore numerous different paths within Environmental Studies."
+    "text": "Hello! My name is Jessica Rumkin, but I often go by Jessi.\nThis is my personal website that I built. Check out the Projects page to see a wide variety of experiences, the GitHub link to see the code for this site, or the About page to see some really pretty hiking photos.\n\nI’m currently studying at University fo California, Santa Barbara (UCSB) for a BS in Environmental Studies with an additional emphasis on Geographic Spatial Science. I’ll be finishing my degree at Utrecht University in the Netherlands next fall focusing on restoration and agroecology innovation.\nAt my current position as Growing Grounds Coordinator for a UCSB club and non-profit called Your Children’s Trees I co-manage a nursery of 350+ trees, mostly Coast Live oak, for local urban reforestation and ecosystem restoration. I also manage weekly events to teach and supervise volunteers to maximize their learning and completion of tasks.\nPlease see the contact links for all the ways to reach me!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Hello!\nI’m currently a student at Univserity of California, Santa Barbara and I have loved my time here. I’ve lived by the beach for most of my life and living in Goleta has been the best place to find so many opportunities to follow my professional and personal passions. Here are some photos I’ve taken over the past two years of my favorite spots and memories. I love photography and always wish I had my nicer camera on me, but my phone usually does the trick!\n\n\n\nStork Tower at UCSB\n\n\n\n\n\nIsla Vista Sunset\n\n\n\n\nHiking\nI really love hiking, and it’s usually for the purpose of getting outside and eating lunch in a much cooler spot. Intentionally getting outside is sometimes a much needed reset, and the views are always amazing even if I’ve seen it a dozen times.\n\n\n\nSunrise hike in Southern California\n\n\n\n\n\nSouthern California hike with some friends\n\n\n\n\n\nSunrise hike with my NPS interns\n\n\n\n\nChasing the snow\nOne of the only things I can’t get on the coast of southern California is snow. I have found some of my absolute favorite spots around Mammoth and Mono County, where I also love to snowboard as much as I can. It is a super fun way to exercise and I love practicing new skills so it stays interesting.\n\n\n\nMcLeod Lake in the spring\n\n\n\n\n\nConvict lake in early spring\n\n\n\n\n\nFriend trip to enjoy fresh snow\n\n\n\n\n\nView on a snowboarding trip\n\n\n\n\nShi\nAnd finally, my two favorite pictures of my brother’s dog Shi because she is the cutest dog ever and who doesn’t like dog pictures. She’s super smart when she wants to be, but that isn’t always the choice she makes.\n\n\n\nShi playing in the snow\n\n\n\n\n\nShi very oddly playing in the snow"
+  },
+  {
+    "objectID": "Netherlands-Edu.html",
+    "href": "Netherlands-Edu.html",
+    "title": "Netherlands Education",
+    "section": "",
+    "text": "I will be finishing my degree at Utrecht University in the Netherlands, so this page will be updated as I have things to share."
   },
   {
     "objectID": "Netherlands-Edu.html#coming-soon",
     "href": "Netherlands-Edu.html#coming-soon",
     "title": "Netherlands Education",
-    "section": "Coming Soon!",
-    "text": "Coming Soon!"
+    "section": "",
+    "text": "I will be finishing my degree at Utrecht University in the Netherlands, so this page will be updated as I have things to share."
   },
   {
-    "objectID": "posts/personal-data-project/index.html#set-up",
-    "href": "posts/personal-data-project/index.html#set-up",
-    "title": "Personal Data Project",
-    "section": "Set Up",
-    "text": "Set Up\n\nlibrary(tidyverse)\nlibrary(here)\nlibrary(gt)\nlibrary(janitor)\nlibrary(readxl)\nlibrary(plotly)\nlibrary(DT)\n\nmydata &lt;- read.csv(\"C:/Users/jlrum/MyGit/jrumkin.github.io/posts/personal-data-project/mydata.csv\")\n\n\n#summarizing personal data\nmydata_summary &lt;-  mydata |&gt; #make an object called mydata_summary using mydata file\n  group_by(accompanied) |&gt; #group the sumary by company type\n  summarise(mean_score = round(mean(final_productivity_score),digits = 1), #find mean\n            sd = round(sd(final_productivity_score), digits = 1), #find standard deviation\n            se = round((sd(final_productivity_score)/sqrt(length(final_productivity_score))),digits = 1), #find standard error\n            ci_lower = round(mean_score - 1.96 * (sd(final_productivity_score)/ sqrt(length(final_productivity_score))),digits = 1), #find lower confidence interval at 95%\n            ci_upper = round(mean_score + 1.96 * (sd(final_productivity_score) / sqrt(length(final_productivity_score))),digits = 1) #find upper confidence interval at 95%\n  )\n\n\nInteractive data table\n\n#Useing DT to create an interactice table\n\ndatatable(data = mydata)"
-  },
-  {
-    "objectID": "posts/personal-data-project/index.html#data-visualization",
-    "href": "posts/personal-data-project/index.html#data-visualization",
-    "title": "Personal Data Project",
-    "section": "Data Visualization",
-    "text": "Data Visualization\n\n# new mydata object with marker column\nmydata_marker &lt;- mydata |&gt;  \n  \n  # create a new column called \"marker\" \n  mutate(marker = paste0(\"Type: \", company_type, \"&lt;br&gt;\",\n                         \"Score: \", focus_score, \" × \", \"Duration (hr): \", duration_decimal_hour, \"&lt;br&gt;\",\n                         \"= \", \"Final Productivity Score: \", final_productivity_score))\n\n\n#creating static visualizations for personal data\n\nmydata_static &lt;- ggplot(data = mydata_marker,\n                       aes(x = accompanied,\n                           y = final_productivity_score,\n                           color = accompanied,\n                           text = marker)) +\n  geom_jitter(height = 0, #add geometry of jitter plot, 0 height jitter\n              width = 0.2, #0.2 jitter width\n              shape = 20) + #shape is open circles for the jitter points\n  geom_errorbar(data = mydata_summary, #add a geometry of an error bar from data of mydata_summary\n                aes(x = accompanied,\n                    y = mean_score,\n                    ymin = ci_lower,\n                    ymax = ci_upper,\n                    width = 0.12),\n                inherit.aes = FALSE,\n                    color = \"black\") +\n  geom_point(data = mydata_summary, #add geometry of a point from mydata_summary of the mean productivity score\n             aes(x = accompanied,\n                 y = mean_score),\n             inherit.aes = FALSE, #the geom_point layer will not inherit aesthitcs settings\n             color = \"black\", #point showing the mean is black\n             size = 2) +\n  labs(x = \"Company Type\", #labling the x and y axis and the title\n       y = \"Final Productivity Score\",\n       title = \"Mean Productivity Score between \\nAccompanied and Alone study sessions\") +\n  scale_color_manual(values = c(\"Accompanied\" = \"#377b42\", #manual colors for groups \n                                \"Alone\" = \"#AA71BA\")) +\n  theme_minimal() +\n  theme(legend.position = \"none\")\n\n\n#using plotly to make the figure interactive\nmydata_interactive &lt;- ggplotly(mydata_static, tooltip = \"text\") |&gt; \n  layout( \n    font = list(family = \"Times\"),\n  \n    # editing the marker/tooltip/hoverlabel \n    hoverlabel = list(\n      # editing the font: all goes in a list()\n      font = list(\n        family = \"Times\",\n        size = 13,\n        color = \"#FFFFFF\",\n        align = \"left\"\n      )\n    )\n  )"
-  },
-  {
-    "objectID": "posts/personal-data-project/index.html#interactive-visualization",
-    "href": "posts/personal-data-project/index.html#interactive-visualization",
-    "title": "Personal Data Project",
-    "section": "Interactive Visualization",
-    "text": "Interactive Visualization"
-  },
-  {
-    "objectID": "posts/personal-data-project/index.html#data-visualization-code",
-    "href": "posts/personal-data-project/index.html#data-visualization-code",
-    "title": "Personal Data Project",
-    "section": "Data Visualization Code",
-    "text": "Data Visualization Code\n\n# new mydata object with marker column\nmydata_marker &lt;- mydata |&gt;  \n  \n  # create a new column called \"marker\" \n  mutate(marker = paste0(\"Type: \", company_type, \"&lt;br&gt;\",\n                         \"Score: \", focus_score, \" × \", \"Duration (hr): \", duration_decimal_hour, \"&lt;br&gt;\",\n                         \"= \", \"Final Productivity Score: \", final_productivity_score))\n\n\n#creating static visualizations for personal data\n\nmydata_static &lt;- ggplot(data = mydata_marker,\n                       aes(x = accompanied,\n                           y = final_productivity_score,\n                           color = accompanied,\n                           text = marker)) +\n  geom_jitter(height = 0, #add geometry of jitter plot, 0 height jitter\n              width = 0.2, #0.2 jitter width\n              shape = 20) + #shape is open circles for the jitter points\n  geom_errorbar(data = mydata_summary, #add a geometry of an error bar from data of mydata_summary\n                aes(x = accompanied,\n                    y = mean_score,\n                    ymin = ci_lower,\n                    ymax = ci_upper,\n                    width = 0.12),\n                inherit.aes = FALSE,\n                    color = \"black\") +\n  geom_point(data = mydata_summary, #add geometry of a point from mydata_summary of the mean productivity score\n             aes(x = accompanied,\n                 y = mean_score),\n             inherit.aes = FALSE, #the geom_point layer will not inherit aesthitcs settings\n             color = \"black\", #point showing the mean is black\n             size = 2) +\n  labs(x = \"Company Type\", #labling the x and y axis and the title\n       y = \"Final Productivity Score\",\n       title = \"Mean Productivity Score between \\nAccompanied and Alone study sessions\") +\n  scale_color_manual(values = c(\"Accompanied\" = \"#377b42\", #manual colors for groups \n                                \"Alone\" = \"#AA71BA\")) +\n  theme_minimal() +\n  theme(legend.position = \"none\")\n\n\n#using plotly to make the figure interactive\nmydata_interactive &lt;- ggplotly(mydata_static, tooltip = \"text\") |&gt; \n  layout( \n    font = list(family = \"Times\"),\n  \n    # editing the marker/tooltip/hoverlabel \n    hoverlabel = list(\n      # editing the font: all goes in a list()\n      font = list(\n        family = \"Times\",\n        size = 13,\n        color = \"#FFFFFF\",\n        align = \"left\"\n      )))\n\n\nMean Productivity Interactive Figure"
+    "objectID": "posts/gis-lahar/gis-lahar.html",
+    "href": "posts/gis-lahar/gis-lahar.html",
+    "title": "Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand",
+    "section": "",
+    "text": "Capstone research project for the UCSB Geography 176A-C course series on geographic information systems and science (GIS).\nThis group project culminated in a symposium to present our posters and digital artifacts to other students, professors, geography department admin, and professionals."
   },
   {
     "objectID": "posts/gis-lahar/gis-lahar.html#poster",
     "href": "posts/gis-lahar/gis-lahar.html#poster",
     "title": "Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand",
     "section": "Poster",
-    "text": "Poster\n\n\n\nFig. 1 - GIS Research Poster\n\n\nOpen Poster in a new tab: View the PDF"
+    "text": "Poster\n\n\n\nFig. 1 - GIS Research Poster\n\n\nOpen Poster in a new tab: View the PDF\n\n\n\nWe won best visual element!"
   },
   {
     "objectID": "posts/gis-lahar/gis-lahar.html#digital-artifact-esri-story-map",
@@ -119,18 +84,11 @@
     "text": "Digital Artifact: Esri Story Map\nSee our full report in the Esri Story Map: https://arcg.is/1Tf0vS"
   },
   {
-    "objectID": "UCSB-GIS.html#research-project",
-    "href": "UCSB-GIS.html#research-project",
-    "title": "UCSB Spatial Science",
-    "section": "Research Project",
-    "text": "Research Project\nMy biggest accomplishment was the capstone research project, which culminated in the GEOG 176C Symposium where my group members and I got to present our research poster to students, faculty, staff, and professionals in the field.\nSee the details in the navbar projects &gt; Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand\n\n\n\nOur Research Poster - click to open PDF\n\n\nAlso see our Digital Artifact on Esri Story Maps for the full report details.\nA special thanks to Dr. Peter Kedron, the UCSB Geography Department, and my amazing research group that made this project possible."
-  },
-  {
     "objectID": "posts/gis-lahar/gis-lahar.html#brief-description",
     "href": "posts/gis-lahar/gis-lahar.html#brief-description",
     "title": "Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand",
     "section": "Brief Description",
-    "text": "Brief Description\nLahar Background Lahars are an important and destructive subset of mudflows that can occur with composite volcano activity. Ash, water, and debris travel at rates of up to 30 m/s, reaching as far as 100km from the source (Thouret et al., 2020). These events are extremely dangerous and put surrounding populations at high risk of property damage, injury, and even death.\nThree arrays of AFMs currently exist on Mt. Ruapehu, ranging across the Eastern side of the volcano (fig. 2). Limited information is available on the suitability criteria for existing installation, but existing literature suggests that factors influencing site locations are slope angel, distance from lahar danger zones, surrounding land use, and accessibility (Johnson et al., 2023; Sanderson et al., 2021)."
+    "text": "Brief Description\nLahar Background Lahars are an important and destructive subset of mudflows that can occur with composite volcano activity. Ash, water, and debris travel at rates of up to 30 m/s, reaching as far as 100km from the source (Thouret et al., 2020). These events are extremely dangerous and put surrounding populations at high risk of property damage, injury, and even death.\nThree arrays of AFMs currently exist on Mt. Ruapehu, ranging across the Eastern side of the volcano (fig. 2). Limited information is available on the suitability criteria for existing installation, but existing literature suggests that factors influencing site locations are slope angel, distance from lahar danger zones, surrounding land use, and accessibility (Johnson et al., 2023; Sanderson et al., 2021).\n\n\n\nFig. 3 - Current AFM sites and predicted lahar risk zones"
   },
   {
     "objectID": "posts/gis-lahar/gis-lahar.html#research-question",
@@ -152,6 +110,20 @@
     "title": "Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand",
     "section": "Acknowledgements",
     "text": "Acknowledgements\nThank you to Dr. Peter Kedron and the UCSB Geography Department fro making this project possible,\nAnd a special thank you to the others in my research team: Angela Halim, Max Larrabee, and Roo Swain for working so hard on this project."
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Projects",
+    "section": "",
+    "text": "A wide variety of personal and professional projects. See the side navigation to explore and filter by category.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAcoustic flow monitor arrays on Mt. Ruapehu, New Zealand\n\n\n\n\n\nA capstone project using ArcGIS Pro\n\n\n\n\n\nMay 25, 2025\n\n\nJessi Rumkin\n\n\n\n\n\n\n\n\n\n\n\n\nBren Environmental Studies Fellowship\n\n\n\n\n\n\nUCSB\n\n\nBren\n\n\n\nA professional development fellowship to link UCSB environmental studies students to the Bren envrironmental graduate school.\n\n\n\n\n\nMay 28, 2025\n\n\nJessi Rumkin\n\n\n\n\n\n\n\n\n\n\n\n\nPersonal Data Project\n\n\n\n\n\n\nRStudio\n\n\nData Science\n\n\nUCSB\n\n\n\nA data science project based on data I collected on my life.\n\n\n\n\n\nMay 28, 2025\n\n\nJessi Rumkin\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "UCSB-enviro.html",
+    "href": "UCSB-enviro.html",
+    "title": "UCSB Environmental Studies",
+    "section": "",
+    "text": "My main degree from University of California, Santa Barbara is a B.S. Environmental Studies (expected June 2026).\nI chose UCSB because this program allowed and encouraged me to explore numerous different paths within Environmental Studies."
   },
   {
     "objectID": "UCSB-enviro.html#social-sciences",

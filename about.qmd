@@ -8,7 +8,7 @@ toc: true
 
 ##### Hello!
 
-I'm currently a student at Univserity of California, Santa Barbara and I have loved my time here. I've lived by the beach for most of my life and living in Goleta has been the best place to find so many opportunities to follow my professional and personal passions. Here are some photos I've taken over the past two years of my favorite spots and memories. I love photography and always wish I had my nicer camera on me, but my phone usually does the trick!
+I'm currently a student at University of California, Santa Barbara and I have loved my time here. I've lived by the beach for most of my life and living in Goleta has been the best place to find so many opportunities to follow my professional and personal passions. Here are some photos I've taken over the past two years of my favorite spots and memories. I love photography and always wish I had my nicer camera on me, but my phone usually does the trick!
 
 ![Stork Tower at UCSB](photos/stork_tower.jpeg){width="8in"}
 

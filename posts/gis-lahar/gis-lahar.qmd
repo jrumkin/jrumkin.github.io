@@ -7,15 +7,17 @@ lightbox: TRUE
 format: html
 ---
 
-Capstone project for the UCSB 176A-C course series on geographic information systems and science (GIS).
+Capstone research project for the UCSB Geography 176A-C course series on geographic information systems and science (GIS).
 
-This group project culminated in a symposium to present our posters and digital artifacts to other students, professors, geography department admin, and professionals. We developed a research project and used ArcGIS Pro to answer spatial questions.
+This group project culminated in a symposium to present our posters and digital artifacts to other students, professors, geography department admin, and professionals.
 
 ## Poster
 
 [![Fig. 1 - GIS Research Poster](176C%20Poster.jpg)](GIS-poster.pdf)
 
 Open Poster in a new tab: [View the PDF](GIS-poster.pdf){target="_blank"}
+
+![We won best visual element!](IMG_0840.JPEG){fig-alt="Research group in front of research poster with an award certificate"}
 
 ## Digital Artifact: Esri Story Map
 
@@ -25,7 +27,9 @@ See our full report in the Esri Story Map: <https://arcg.is/1Tf0vS>
 
 Lahar Background Lahars are an important and destructive subset of mudflows that can occur with composite volcano activity. Ash, water, and debris travel at rates of up to 30 m/s, reaching as far as 100km from the source (Thouret et al., 2020). These events are extremely dangerous and put surrounding populations at high risk of property damage, injury, and even death.
 
-Three arrays of AFMs currently exist on Mt. Ruapehu, ranging across the Eastern side of the volcano (fig. 2). Limited information is available on the suitability criteria for existing installation, but existing literature suggests that factors influencing site locations are slope angel, distance from lahar danger zones, surrounding land use, and accessibility (Johnson et al., 2023; Sanderson et al., 2021).![Fig. 3 - Current AFM sites and predicted lahar risk zones](lahar_info.png){width="5in"}
+Three arrays of AFMs currently exist on Mt. Ruapehu, ranging across the Eastern side of the volcano (fig. 2). Limited information is available on the suitability criteria for existing installation, but existing literature suggests that factors influencing site locations are slope angel, distance from lahar danger zones, surrounding land use, and accessibility (Johnson et al., 2023; Sanderson et al., 2021).
+
+![Fig. 3 - Current AFM sites and predicted lahar risk zones](lahar_info.png){width="5in"}
 
 ## Research Question
 
