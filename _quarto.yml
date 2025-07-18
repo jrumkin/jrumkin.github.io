@@ -24,7 +24,7 @@ website:
           - UCSB-GIS.qmd
           - Netherlands-Edu.qmd
       - text: Resume
-        href: Rumkin_General_Resume.pdf
+        href: general_resume.pdf
         target: "_blank"
     right: 
       - text: "Contact and Other links"
