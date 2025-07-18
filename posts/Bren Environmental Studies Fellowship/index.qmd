@@ -1,20 +1,24 @@
 ---
 title: "Bren Environmental Studies Fellowship"
-description: A professional development fellowship to link UCSB environmental studies students to the Bren envrironmental graduate school.
+description: A professional development fellowship, 2024-2025
 author: "Jessi Rumkin"
 date: 05-28-2025
 categories: [UCSB, Bren]
 format: html
 ---
 
-The Bren Environmental Studies Fellowship is a partnership between UCSB's Environmental Studies department and the Bren graduate school on UCSB campus.
+The Bren Environmental Studies Fellowship is a partnership between UCSB's undergraduate Environmental Studies department and the UCSB Bren Environmental Science graduate school.
 
-See [here](https://bren.ucsb.edu/undergrad-mentoring/bren-es-fellows-program/bren-es-fellows/jessi-rumkin#:~:text=Jessi%20Rumkin-,Jessi%20Rumkin,-Bren%2DEnvironmental%20Studies "Open in browser") for my participant bio, and [here](https://bren.ucsb.edu/undergrad-mentoring/bren-es-fellows-program#:~:text=ENVIRONMENTAL%20STUDIES%20FELLOWS-,PROGRAM%20OVERVIEW,-Developed%20by%20the "Open in browser") for more program information.
+See [here](https://bren.ucsb.edu/undergrad-mentoring/bren-es-fellows-program/bren-es-fellows/jessi-rumkin#:~:text=Jessi%20Rumkin-,Jessi%20Rumkin,-Bren%2DEnvironmental%20Studies "Open in browser"){target="_blank"} for my participant bio, and [here](https://bren.ucsb.edu/undergrad-mentoring/bren-es-fellows-program#:~:text=ENVIRONMENTAL%20STUDIES%20FELLOWS-,PROGRAM%20OVERVIEW,-Developed%20by%20the "Open in browser"){target="_blank"} for more program information.
 
 ------------------------------------------------------------------------
 
-Being accepted into this fellowship opened opportunties that helped me further my professional and academic development. Being a part of the Educational Opportunity Program at UCSB as a first generation college student has come with its challenges, but the community and support from the other fellows helped me face and grow from them.
+My biggest takeaway from this fellowship was learning how to take create and take advantage of opportunities I wouldn't have known how to before.
 
-The fellowship created structured opportunities to work on networking skills, resume writing, meet with faculty, and set up mentor meetings with Bren students, faculty, and field professionals.
+Being a part of the Educational Opportunity Program at UCSB as a first generation college student has come with its challenges, but the community and support from the other fellows helped me face and grow from them.
+
+The fellowship created structured opportunities to work on networking skills, resume writing, meet with faculty, and set up mentor meetings with Bren students, faculty, and field professionals. I learned so much and will always cherish the time I spent, skilled learned, and friends made from this program.
 
 A special thanks to the Program Director, Heather Stanford, for all her hard work in managing the program and always being in my corner.
+
+![My Bren ES Fellowship cohort and organizers!](besf.JPG){fig-align="left" width="72%"}

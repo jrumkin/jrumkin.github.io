@@ -11,9 +11,9 @@ about:
       href: mailto::jrumkin@ucsb.edu
 ---
 
-Hello! My name is Jessica Rumkin, but I often go by Jessi.
+Hello! My name is Jessica Rumkin, but I usually go by Jessi.
 
-This is my personal website that I built. Check out the Projects page to see a wide variety of experiences, the GitHub link to see the code for this site, or the About page to see some really pretty hiking photos.
+This is my personal website I built. Check out the Projects page to see a wide variety of experiences, the GitHub link to see the code for this site, or the About page to see some really pretty hiking photos.
 
 ------------------------------------------------------------------------
 

@@ -1,0 +1,29 @@
+---
+title: "VEG Lab: vegitation research assistant"
+description: The VEG lab at UCSB houses many projects relating to vegitation and ecology.
+author: "Jessi Rumkin"
+categories: [UCSB, research]
+date: 04-01-2025
+lightbox: TRUE
+format: html
+---
+
+Carla D'Antonio's VEG Lab at UC Santa Barbara houses many projects relating to vegetation and ecology. See the lab website [here](https://veglab.eemb.ucsb.edu/){target="_blank"}.
+
+I assisted Nick Saglimbeni on his research at Dangermond Nature Preserve to optimize restoration techniques for the preserve and for further use in other terrestrial coastal ecosystems of California.
+
+Assisting many different tasks came with learning a lot of skills like:
+
+-   sterile lab techniques for handling field samples
+
+-   taking plant measurements
+
+-   identifying species in the field to asses percent coverage
+
+-   taking soil samples in the field
+
+-   data management and accountability
+
+-   field safety, like using radios and awareness of rattlesnakes
+
+![One of many study sites!](dangermond.jpg){fig-align="left" width="60%"}
