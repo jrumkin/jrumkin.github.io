@@ -8,38 +8,20 @@ toc: true
 
 ##### Hello!
 
-I'm currently a student at University of California, Santa Barbara and I have loved my time here. I've lived by the beach for most of my life and living in Goleta has been the best place to find so many opportunities to follow my professional and personal passions.
+I did most of bachelor's at University of California, Santa Barbara. I am currently a student at Utrecht University in the Netherlands to finish out my degrees in Environmental Science and Spatial Science.
 
-Here are some photos I've taken over the past two years of my favorite spots and memories. I love photography and always wish I had my nicer camera on me, but my phone usually does the trick!
+I learned so much in my courses and professors, and the degree program at UCSB encouraged me try out many high level topics.
 
-![Stork Tower at UCSB](photos/stork_tower.jpeg){fig-align="left" width="8in"}
+![Stork Tower at UCSB](photos/stork_tower.jpeg){fig-align="left" width="6in"}
 
-![Isla Vista Sunset](photos/IV_sunset.jpg){fig-align="left" width="4in"}
+Utrecht University is allowing me to enhance my education by adding global perspectives and techniques to my understanding of environmental systems. With a focus on geoscience and integrated science and management I am able to practice using what I've learned in practical settings, both in policy and in research.
 
-### Hiking
+See the education page for more details.
 
-I really love hiking, and it's usually for the purpose of getting outside and eating lunch in a much cooler spot. Intentionally getting outside is sometimes a much needed reset, and the views are always amazing even if I've seen it a dozen times.
+### Recent Positions
 
-![Sunrise hike in Southern California](photos/sunrise_sandstone.jpeg){.img-fluid fig-align="left" width="4in"}
+I recently left two positions I held in Santa Barbara due to moving to the Netherlands. Santa Barbara is my favorite city I've been to and it reminded me just how much I love being outside.
 
-![Southern California hike with some friends](photos/camping_hike.JPG){.img-fluid fig-align="left" width="4in"}
+I was a research assistant for the VEG lab at UCSB, where I would collect soil samples and plant coverage data. In a team we would identify all the species we could see and determine the number of individuals and percent coverage in each sector. This position solidified how much I love field work and it keeps me passionate about my work.
 
-![Sunrise hike with my NPS interns](photos/nps_hike_rock.jpg){.img-fluid fig-align="left" width="4in"}
-
-### Chasing the snow
-
-One of the only things I can't get on the coast of southern California is snow. I have found some of my absolute favorite spots around Mammoth and Mono County, where I also love to snowboard as much as I can. It is a super fun way to exercise and I love practicing new skills so it stays interesting.
-
-![McLeod Lake in the spring](photos/McLeod.jpeg){fig-align="left" width="5.33in"}
-
-![Convict lake in early spring](photos/convict_lake.jpeg){fig-align="left" width="5.33in"}
-
-![View on a snowboarding trip](photos/snowboarding_view.jpg){fig-align="left" width="6.67in"}
-
-### Shi
-
-And finally, my two favorite pictures of my brother's dog Shi because she is the cutest dog ever and who doesn't like dog pictures. She's super smart when she wants to be, but that isn't always the choice she makes.
-
-![Shi playing in the snow](photos/shi_snow.jpg){fig-align="left" width="4in"}
-
-![Shi very oddly playing in the snow](photos/shi.jpg){fig-align="left" width="4in"}
+I was also the Growing Grounds Coordinator for a non-profit called Your Children's Trees. In this position I oversaw the care of 300+ trees, mostly Coast live oak. While providing and adjusting the care of the trees, I also coordinated weekly events where I delegated and taught volunteer groups of 1-15 people in order to maximize their learning while also completing tasks. This position helped me bridge the gap between restoration science and connection to the community. I learned a lot from my supervisor, Ken Knight, and will always value my time I spent at the Harder Growing Grounds.
