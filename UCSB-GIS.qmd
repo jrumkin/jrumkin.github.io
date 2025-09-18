@@ -31,7 +31,7 @@ My biggest accomplishment was the capstone research project, which culminated in
 
 See the details in the navbar projects \> [Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand](https://jrumkin.github.io/posts/gis-lahar/gis-lahar.html "My Project Page")
 
-[![Our Research Poster - click to open PDF](posts/gis-lahar/176C Poster.jpg)](https://jrumkin.github.io/posts/gis-lahar/GIS-poster.pdf)
+[![Our Research Poster - click to open PDF](posts/gis-lahar/176C%20Poster.jpg)](https://jrumkin.github.io/posts/gis-lahar/GIS-poster.pdf)
 
 Also see our [Digital Artifact on Esri Story Maps](https://arcg.is/1Tf0vS "Open in browser") for the full report details.
 

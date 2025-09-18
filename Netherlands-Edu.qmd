@@ -3,6 +3,16 @@ title: "Netherlands Education"
 format: html
 ---
 
-## Coming Soon!
+### In progress courses
 
-I will be finishing my degree at Utrecht University in the Netherlands, so this page will be updated as I have things to share.
+I am currently at Utrecht University in the Netherlands. This page will be updated as I go.
+
+Most notable courses so far:
+
+-   Landscape Ecology and Nature Conservation
+
+    -   Apply ecological concepts to sustainability problems
+
+    -   Cross border and cross system case studies
+
+    -   Research project: analyzing biodiversity data over time using R
