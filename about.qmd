@@ -8,20 +8,32 @@ toc: true
 
 ##### Hello!
 
-I did most of bachelor's at University of California, Santa Barbara. I am currently a student at Utrecht University in the Netherlands to finish out my degrees in Environmental Science and Spatial Science.
+I did most of bachelor's at University of California, Santa Barbara. I am currently a student at Utrecht University in the Netherlands to finish my bachelors. I will be graduating this year with a BS in Environmental Studies with an additional emphasis in geographic spatial science.
 
-I learned so much in my courses and professors, and the degree program at UCSB encouraged me try out many high level topics.
+A few notable courses I've taken are:
+
++-----------------------------------------------+--------------------------------------------------------------------------------------+
+| Environmental Studies                         | Geographic Spatial Science                                                           |
++-----------------------------------------------+--------------------------------------------------------------------------------------+
+| -   Landscape Ecology and Nature Conservation | -   Technical Issues and Applications for Geographic Information Systems and Science |
+|                                               |                                                                                      |
+| -   Biodiversity and Conservation             | -   GIS Design and Applications                                                      |
+|                                               |                                                                                      |
+| -   Global Water Supply and Demand            |     -   Research project and poster creation                                         |
+|                                               |                                                                                      |
+| -   Traditional Ecological Knowledge          |                                                                                      |
++-----------------------------------------------+--------------------------------------------------------------------------------------+
+
+See Education page for more details.
+
+------------------------------------------------------------------------
 
 ![Stork Tower at UCSB](photos/stork_tower.jpeg){fig-align="left" width="6in"}
 
-Utrecht University is allowing me to enhance my education by adding global perspectives and techniques to my understanding of environmental systems. With a focus on geoscience and integrated science and management I am able to practice using what I've learned in practical settings, both in policy and in research.
-
-See the education page for more details.
-
 ### Recent Positions
 
-I recently left two positions I held in Santa Barbara due to moving to the Netherlands. Being in Santa Barbara reminded me just how much I love being outside.
+I recently left two positions I held in Santa Barbara due to moving to the Netherlands. Being in Santa Barbara reminded me how much I love being and working outside.
 
-I was a research assistant for the VEG lab at UCSB, where I would collect soil samples and plant coverage data. In a team we would identify all the species we could see and determine the number of individuals and percent coverage in each sector. This position solidified how much I love field work and it keeps me passionate about my work.
+I was a research assistant for the VEG lab at UCSB, where I would collect soil samples and plant coverage data. Hiking out to the research sites, my team would identify all the species we could see and determine the number of individuals and percent coverage in each sector. This position solidified how much I love field work and jobs like these keep me passionate for the field.
 
-I was also the Growing Grounds Coordinator for a non-profit called Your Children's Trees. In this position I oversaw the care of 300+ trees, mostly Coast live oak. While providing and adjusting the care of the trees, I also coordinated weekly events where I delegated and taught volunteer groups of 1-15 people in order to maximize their learning while also completing tasks. This position helped me bridge the gap between restoration science and connection to the community. I learned a lot from my supervisor, Ken Knight, and will always value my time I spent at the Harder Growing Grounds.
+I was also the Growing Grounds Coordinator for a non-profit called Your Children's Trees. In this position I oversaw the care of 300+ trees, mostly Coast live oak. While providing and adjusting the care of the trees, I also coordinated weekly events where I delegated and taught volunteer groups of 1-15 people in order to maximize their learning and completing tasks. This position helped me bridge the gap between restoration science and connection to the community. I learned a lot from my supervisor, Ken Knight, and will always value my time I spent at the Harder Growing Grounds.
