@@ -1,5 +1,5 @@
 ---
-title: "Netherlands Education"
+title: "Utrecht University "
 format: html
 ---
 
@@ -9,10 +9,28 @@ I am currently at Utrecht University in the Netherlands. This page will be updat
 
 Most notable courses so far:
 
--   Landscape Ecology and Nature Conservation
+- Landscape Ecology and Nature Conservation
 
-    -   Apply ecological concepts to sustainability problems
+  - Apply ecological concepts to sustainability problems
 
-    -   Cross border and cross system case studies
+  - Cross border and cross system case studies
 
-    -   Research project: analyzing biodiversity data over time using R
+  - Research project: analyzing biodiversity data over time using R
+
+- Integrated Water and Soil Management
+
+  - Develop practical skills in a field project in measurements and monitoring of water characteristics for environmental management
+
+  - Analyze water and soil systems and their mutual relationships
+
+- Environmental Impact Assessment
+
+  - Implement the procedures of an ESIA through mock meetings
+
+  - Discuss stakeholders and how various roles and motivations shape the decision-making process
+
+- Applied Data Analysis and Visualization
+
+  - Taught through R, practical learning with real data
+
+  - Apply the main statistical methods in data analysis and how to use machine learning algorithms and visualizing techniques
