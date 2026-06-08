@@ -27,7 +27,7 @@ library(janitor) #package to clean data
 library(plotly) #package for making interactive figures
 library(DT) #package for making interactive tables
 
-mydata <- read.csv("C:/Users/jlrum/MyGit/jrumkin.github.io/posts/personal-data-project/mydata.csv") #read in mydata file
+mydata <- read.csv("mydata.csv") #read in mydata file
 
 ```
 
@@ -118,10 +118,10 @@ mydata_static <- ggplot(data = mydata_marker, #using ggplot to create a static f
               shape = 20) + #shape is open circles for the jitter points
   geom_errorbar(data = mydata_summary, #add a geometry of an error bar from data of mydata_summary
                 aes(x = accompanied, #x axis by accompanied
-                    y = mean_score, # y axis by average productivity scores
+                     # y axis by average productivity scores
                     ymin = ci_lower, #error bar lower
-                    ymax = ci_upper, #error bar upper
-                    width = 0.12), #manual width of the bars
+                    ymax = ci_upper), #error bar upper
+                    width = 0.12, #manual width of the bars
                     color = "black") + #color them black for visual ease
   geom_point(data = mydata_summary, #add geometry of a point from mydata_summary of the mean productivity score
              aes(x = accompanied, #x axis by accompnied

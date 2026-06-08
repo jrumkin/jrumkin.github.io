@@ -13,14 +13,10 @@ about:
 
 Hello! My name is Jessica Rumkin, but I usually go by Jessi.
 
-This is my personal website I built to better showcase my experience and abilities. Check out the Projects page to see a wide variety of experiences, the GitHub link to see the code for this site, or the About page for some more information.
+This site serves as a portfolio of my experience and skills. View my Resume, explore the Projects page for a selection of my experiences, visit the About page to learn more about me, or browse the source code on GitHub.
 
 ------------------------------------------------------------------------
 
-I'm currently studying at Utrecht University in the Netherlands to finish my degree in Environmental Studies (B.S.) and an additional emphasis in Geographic Spatial Science. 
+I'm completing my B.S. in Environmental Studies from UC Santa Barbara with an aditional emphasis in geographic information systems, and I am currently finishing my degree abroad at Utrecht University in the Netherlands.
 
-At Utrecht University I'm focusing on practical and integrated science courses.
-
-Due to moving to the Netherlands, I ended two positions as a research assistant for the VEG lab at UCSB, as well as my role as Growing Grounds Coordinator for the non-profit Your Children's Trees. 
-
-Please see the contact links to reach me!  
+Please see the contact links to reach me!

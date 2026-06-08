@@ -1,5 +1,8 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "!posts/personal-data-project/"
   output-dir: docs
 
 website:
@@ -17,14 +20,15 @@ website:
         text: Jessi Rumkin - Home
       - href: about.qmd
         text: About Me
-      - posts.qmd
+      - href: posts.qmd
+        text: Projects
       - text: "Education Highlights"
         menu: 
           - UCSB-enviro.qmd
           - UCSB-GIS.qmd
           - Netherlands-Edu.qmd
       - text: Resume
-        href: general_resume.pdf
+        href: Rumkin_Resume(June2026).pdf
         target: "_blank"
     right: 
       - text: "Contact and Other links"

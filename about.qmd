@@ -12,17 +12,19 @@ I did most of bachelor's at University of California, Santa Barbara. I am curren
 
 A few notable courses I've taken are:
 
-+-----------------------------------------------+--------------------------------------------------------------------------------------+
-| Environmental Studies                         | Geographic Spatial Science                                                           |
-+-----------------------------------------------+--------------------------------------------------------------------------------------+
-| -   Landscape Ecology and Nature Conservation | -   Technical Issues and Applications for Geographic Information Systems and Science |
-|                                               |                                                                                      |
-| -   Biodiversity and Conservation             | -   GIS Design and Applications                                                      |
-|                                               |                                                                                      |
-| -   Global Water Supply and Demand            |     -   Research project and poster creation                                         |
-|                                               |                                                                                      |
-| -   Traditional Ecological Knowledge          |                                                                                      |
-+-----------------------------------------------+--------------------------------------------------------------------------------------+
++---------------------------------------------+------------------------------------------------------------------------------------+
+|                                             |                                                                                    |
++=============================================+====================================================================================+
+| Environmental Studies                       | Geographic Spatial Science                                                         |
++---------------------------------------------+------------------------------------------------------------------------------------+
+| - Landscape Ecology and Nature Conservation | - Technical Issues and Applications for Geographic Information Systems and Science |
+|                                             |                                                                                    |
+| - Environmental Impact Assessment           | - GIS Design and Applications                                                      |
+|                                             |                                                                                    |
+| - Global Water Supply and Demand            |   - Research project and poster creation                                           |
+|                                             |                                                                                    |
+| - Traditional Ecological Knowledge          |                                                                                    |
++---------------------------------------------+------------------------------------------------------------------------------------+
 
 See Education page for more details.
 
@@ -32,8 +34,8 @@ See Education page for more details.
 
 ### Recent Positions
 
-I recently left two positions I held in Santa Barbara due to moving to the Netherlands. Being in Santa Barbara reminded me how much I love being and working outside.
+I left two positions I held in Santa Barbara due to moving to the Netherlands. Being in Santa Barbara reminded me how much I love being and working outside.
 
 I was a research assistant for the VEG lab at UCSB, where I would collect soil samples and plant coverage data. Hiking out to the research sites, my team would identify all the species we could see and determine the number of individuals and percent coverage in each sector. This position solidified how much I love field work and jobs like these keep me passionate for the field. In addition to the field work I would also collect plant measurement data in the lab greenhouse to track plant growth by treatment group over time.
 
-I was also the Growing Grounds Coordinator for a non-profit called Your Children's Trees. In this position I oversaw the care of 300+ trees, mostly Coast live oak. While providing and adjusting the care of the trees, I also coordinated weekly events where I delegated and taught volunteer groups of 1-15 people in order to maximize their learning and completing tasks. This position helped me bridge the gap between restoration science and connection to the community. I learned a lot from my supervisor, Ken Knight, and will always value my time I spent at the Harder Growing Grounds.
+I was also the Growing Grounds Coordinator for a non-profit called Your Children's Trees. In this position I oversaw the care of around 400 trees, mostly Coast live oak. While providing and adjusting the care of the trees, I also coordinated weekly events where I delegated and taught volunteer groups of 1-15 people in order to maximize their learning and completing tasks. This position helped me bridge the gap between restoration science and connection to the community. I learned a lot from my supervisor, Ken Knight, and will always value my time I spent at the Harder Growing Grounds.
