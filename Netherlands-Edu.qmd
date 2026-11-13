@@ -3,34 +3,15 @@ title: "Utrecht University "
 format: html
 ---
 
-### In progress courses
+I studied abroad for one year at Utrecht University, in the Netherlands. I chose to finish my degree abroad because I wanted to broaden my educational experiences and perspectives even further. The Netherlands has some remarkable differences in both educational and environmental perspectives that enhanced my education more than I expected.
 
-I am currently at Utrecht University in the Netherlands. This page will be updated as I go.
+### Notable courses:
 
-Most notable courses so far:
+##### Landscape Ecology and Nature Conservation
 
-- Landscape Ecology and Nature Conservation
+##### Integrated Water and Soil Management
 
-  - Apply ecological concepts to sustainability problems
+##### Environmental Impact Assessment
 
-  - Cross border and cross system case studies
+##### Applied Data Analysis and Visualization
 
-  - Research project: analyzing biodiversity data over time using R
-
-- Integrated Water and Soil Management
-
-  - Develop practical skills in a field project in measurements and monitoring of water characteristics for environmental management
-
-  - Analyze water and soil systems and their mutual relationships
-
-- Environmental Impact Assessment
-
-  - Implement the procedures of an ESIA through mock meetings
-
-  - Discuss stakeholders and how various roles and motivations shape the decision-making process
-
-- Applied Data Analysis and Visualization
-
-  - Taught through R, practical learning with real data
-
-  - Apply the main statistical methods in data analysis and how to use machine learning algorithms and visualizing techniques

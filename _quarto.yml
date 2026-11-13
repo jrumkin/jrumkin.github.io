@@ -21,14 +21,14 @@ website:
       - href: about.qmd
         text: About Me
       - href: posts.qmd
-        text: Projects
+        text: Projects 
       - text: "Education Highlights"
         menu: 
           - UCSB-enviro.qmd
           - UCSB-GIS.qmd
           - Netherlands-Edu.qmd
-      - text: Resume
-        href: Rumkin_Resume(June2026).pdf
+      - text: General CV
+        href: Jessica_Rumkin_CV_general_2026.pdf
         target: "_blank"
     right: 
       - text: "Contact and Other links"

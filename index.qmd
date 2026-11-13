@@ -8,15 +8,15 @@ about:
     - text: LinkedIn
       href: https://www.linkedin.com/in/jessica-rumkin-80b59129a/
     - text: Email
-      href: mailto::jrumkin@ucsb.edu
+      href: mailto::jlrumkin@me.com
 ---
 
 Hello! My name is Jessica Rumkin, but I usually go by Jessi.
 
-This site serves as a portfolio of my experience and skills. View my Resume, explore the Projects page for a selection of my experiences, visit the About page to learn more about me, or browse the source code on GitHub.
+This site serves as a portfolio of my experience and skills. In the top navbar you can view my [general CV](Jessica_Rumkin_CV_general_2026.pdf){target="_blank"} explore my [projects](posts.qmd), see the [about page](about.qmd) to learn more about me, or even browse the source code on GitHub.
 
 ------------------------------------------------------------------------
 
-I'm completing my B.S. in Environmental Studies from UC Santa Barbara with an aditional emphasis in geographic information systems, and I am currently finishing my degree abroad at Utrecht University in the Netherlands.
+I have a B.Sc. in Environmental Studies and a minor in Spatial Studies from University of California, Santa Barbara. My studies focused on ecological conservation and management, water resources, and spatial analysis with GIS.
 
 Please see the contact links to reach me!

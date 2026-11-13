@@ -18,21 +18,21 @@
     "href": "index.html",
     "title": "Jessi Rumkin",
     "section": "",
-    "text": "Hello! My name is Jessica Rumkin, but I usually go by Jessi.\nThis site serves as a portfolio of my experience and skills. View my Resume, explore the Projects page for a selection of my experiences, visit the About page to learn more about me, or browse the source code on GitHub.\n\nI’m completing my B.S. in Environmental Studies from UC Santa Barbara with an aditional emphasis in geographic information systems, and I am currently finishing my degree abroad at Utrecht University in the Netherlands.\nPlease see the contact links to reach me!"
+    "text": "Hello! My name is Jessica Rumkin, but I usually go by Jessi.\nThis site serves as a portfolio of my experience and skills. In the top navbar you can view my general CV explore my projects, see the about page to learn more about me, or even browse the source code on GitHub.\n\nI have a B.Sc. in Environmental Studies and a minor in Spatial Studies from University of California, Santa Barbara. My studies focused on ecological conservation and management, water resources, and spatial analysis with GIS.\nPlease see the contact links to reach me!"
   },
   {
     "objectID": "UCSB-enviro.html",
     "href": "UCSB-enviro.html",
     "title": "UCSB Environmental Studies",
     "section": "",
-    "text": "My main degree from University of California, Santa Barbara is a B.S. Environmental Studies (expected June 2026).\nI chose UCSB because this program allowed and encouraged me to explore numerous different paths within Environmental Studies."
+    "text": "I have a B.Sc. in Environmental Studies and a minor in Spatial Studies (GIS) from University of California, Santa Barbara.\nI chose UCSB because this program allowed and encouraged me to explore numerous paths within environmental studies and gain practical experience whenever possible."
   },
   {
     "objectID": "UCSB-enviro.html#social-sciences",
     "href": "UCSB-enviro.html#social-sciences",
     "title": "UCSB Environmental Studies",
     "section": "Social Sciences",
-    "text": "Social Sciences\n\nENV S 40 Critical Thinking and Reasoning for Environmental Studies\n\n\nENV S 194TK Traditional Ecological Knowledge\n\n\nENV S 193ST Sea Turtle Conservation and Management\n\n\nENV S 161 Modern Applications of Environmental Communication\n\n\nENV S 155 The Built World: Environmental Infrastructure"
+    "text": "Social Sciences\n\nCritical Thinking and Reasoning for Environmental Studies\n\n\nTraditional Ecological Knowledge\n\n\nSea Turtle Conservation and Management\n\n\nModern Applications of Environmental Communication\n\n\nThe Built World: Environmental Infrastructure"
   },
   {
     "objectID": "Resume.html",
@@ -46,7 +46,7 @@
     "href": "Netherlands-Edu.html",
     "title": "Utrecht University",
     "section": "",
-    "text": "In progress courses\nI am currently at Utrecht University in the Netherlands. This page will be updated as I go.\nMost notable courses so far:\n\nLandscape Ecology and Nature Conservation\n\nApply ecological concepts to sustainability problems\nCross border and cross system case studies\nResearch project: analyzing biodiversity data over time using R\n\nIntegrated Water and Soil Management\n\nDevelop practical skills in a field project in measurements and monitoring of water characteristics for environmental management\nAnalyze water and soil systems and their mutual relationships\n\nEnvironmental Impact Assessment\n\nImplement the procedures of an ESIA through mock meetings\nDiscuss stakeholders and how various roles and motivations shape the decision-making process\n\nApplied Data Analysis and Visualization\n\nTaught through R, practical learning with real data\nApply the main statistical methods in data analysis and how to use machine learning algorithms and visualizing techniques"
+    "text": "I studied abroad for one year at Utrecht University, in the Netherlands. I chose to finish my degree abroad because I wanted to broaden my educational experiences and perspectives even further. The Netherlands has some remarkable differences in both educational and environmental perspectives that enhanced my education more than I expected.\n\nNotable courses:\n\nLandscape Ecology and Nature Conservation\n\n\nIntegrated Water and Soil Management\n\n\nEnvironmental Impact Assessment\n\n\nApplied Data Analysis and Visualization"
   },
   {
     "objectID": "UCSB-GIS.html",
@@ -67,7 +67,7 @@
     "href": "about.html",
     "title": "About Me",
     "section": "",
-    "text": "Hello!\nI did most of bachelor’s at University of California, Santa Barbara. I am currently a student at Utrecht University in the Netherlands to finish my bachelors. I will be graduating this year with a BS in Environmental Studies with an additional emphasis in geographic spatial science.\nA few notable courses I’ve taken are:\n\n\n\n\n\n\n\nEnvironmental Studies\nGeographic Spatial Science\n\n\n\nLandscape Ecology and Nature Conservation\nEnvironmental Impact Assessment\nGlobal Water Supply and Demand\nTraditional Ecological Knowledge\n\n\nTechnical Issues and Applications for Geographic Information Systems and Science\nGIS Design and Applications\n\nResearch project and poster creation\n\n\n\n\n\nSee Education page for more details.\n\n\n\n\n\n\n\n\nStork Tower at UCSB\n\n\n\n\nRecent Positions\nI left two positions I held in Santa Barbara due to moving to the Netherlands. Being in Santa Barbara reminded me how much I love being and working outside.\nI was a research assistant for the VEG lab at UCSB, where I would collect soil samples and plant coverage data. Hiking out to the research sites, my team would identify all the species we could see and determine the number of individuals and percent coverage in each sector. This position solidified how much I love field work and jobs like these keep me passionate for the field. In addition to the field work I would also collect plant measurement data in the lab greenhouse to track plant growth by treatment group over time.\nI was also the Growing Grounds Coordinator for a non-profit called Your Children’s Trees. In this position I oversaw the care of around 400 trees, mostly Coast live oak. While providing and adjusting the care of the trees, I also coordinated weekly events where I delegated and taught volunteer groups of 1-15 people in order to maximize their learning and completing tasks. This position helped me bridge the gap between restoration science and connection to the community. I learned a lot from my supervisor, Ken Knight, and will always value my time I spent at the Harder Growing Grounds."
+    "text": "Hello!\nI have a B.Sc. in Environmental Studies and a minor in Spatial Studies. I did most of bachelor’s at University of California, Santa Barbara. I finished it while at Utrecht University in the Netherlands on a study abroad program.\nMy studies focused on ecological conservation and management, water resources, and spatial analysis with GIS. See Education page in the top navbar for more details.\n\n\n\n\n\n\n\n\nStork Tower at UCSB\n\n\n\n\nRecent Positions\nI left two positions I held in Santa Barbara due to moving to the Netherlands. Being in Santa Barbara reminded me how much I love being and working outside.\nI was a research assistant for the VEG lab at UCSB, where I would collect soil samples and plant coverage data. Hiking out to the research sites, my team would identify all the species we could see and determine the number of individuals and percent coverage in each sector. This position solidified how much I love field work and jobs like these keep me passionate for the field. In addition to the field work I would also collect plant measurement data in the lab greenhouse to track plant growth by treatment group over time.\nI was also the Growing Grounds Coordinator for a non-profit called Your Children’s Trees. In this position I oversaw the care of around 400 trees, mostly Coast live oak. While providing and adjusting the care of the trees, I also coordinated weekly events where I delegated and taught volunteer groups of 1-15 people in order to maximize their learning and completing tasks. This position helped me bridge the gap between restoration science and connection to the community. I learned a lot from my supervisor, Ken Knight, and will always value my time I spent at the Harder Growing Grounds."
   },
   {
     "objectID": "posts.html",
@@ -124,5 +124,12 @@
     "title": "Acoustic flow monitor arrays on Mt. Ruapehu, New Zealand",
     "section": "Acknowledgements",
     "text": "Acknowledgements\nThank you to Dr. Peter Kedron and the UCSB Geography Department fro making this project possible,\nAnd a special thank you to the others in my research team: Angela Halim, Max Larrabee, and Roo Swain for working so hard on this project."
+  },
+  {
+    "objectID": "UCSB-enviro.html#hard-sciences",
+    "href": "UCSB-enviro.html#hard-sciences",
+    "title": "UCSB Environmental Studies",
+    "section": "Hard Sciences",
+    "text": "Hard Sciences\n\nBiodiversity and Conservation\n\n\nChemistry and Lab series\n\n\nBiology Lecture and Lab\n\n\nGlobal Water Supply and Demand\n\n\nThe California Channel Islands\n\n\nSea Turtle Conservation and Management"
   }
 ]

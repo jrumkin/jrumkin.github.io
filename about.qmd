@@ -8,31 +8,15 @@ toc: true
 
 ##### Hello!
 
-I did most of bachelor's at University of California, Santa Barbara. I am currently a student at Utrecht University in the Netherlands to finish my bachelors. I will be graduating this year with a BS in Environmental Studies with an additional emphasis in geographic spatial science.
+I have a B.Sc. in Environmental Studies and a minor in Spatial Studies. I did most of bachelor's at University of California, Santa Barbara. I finished it while at Utrecht University in the Netherlands on a study abroad program.
 
-A few notable courses I've taken are:
-
-+---------------------------------------------+------------------------------------------------------------------------------------+
-|                                             |                                                                                    |
-+=============================================+====================================================================================+
-| Environmental Studies                       | Geographic Spatial Science                                                         |
-+---------------------------------------------+------------------------------------------------------------------------------------+
-| - Landscape Ecology and Nature Conservation | - Technical Issues and Applications for Geographic Information Systems and Science |
-|                                             |                                                                                    |
-| - Environmental Impact Assessment           | - GIS Design and Applications                                                      |
-|                                             |                                                                                    |
-| - Global Water Supply and Demand            |   - Research project and poster creation                                           |
-|                                             |                                                                                    |
-| - Traditional Ecological Knowledge          |                                                                                    |
-+---------------------------------------------+------------------------------------------------------------------------------------+
-
-See Education page for more details.
+My studies focused on ecological conservation and management, water resources, and spatial analysis with GIS. See Education page in the top navbar for more details.
 
 ------------------------------------------------------------------------
 
 ![Stork Tower at UCSB](photos/stork_tower.jpeg){fig-align="left" width="6in"}
 
-### Recent Positions
+### Recent Positions 
 
 I left two positions I held in Santa Barbara due to moving to the Netherlands. Being in Santa Barbara reminded me how much I love being and working outside.
 
