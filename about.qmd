@@ -10,7 +10,7 @@ toc: true
 
 I have a B.Sc. in Environmental Studies and a minor in Spatial Studies. I did most of bachelor's at University of California, Santa Barbara. I finished it while at Utrecht University in the Netherlands on a study abroad program.
 
-My studies focused on ecological conservation and management, water resources, and spatial analysis with GIS. See Education page in the top navbar for more details.
+My studies focused on ecological conservation and management, water resources, and spatial analysis with GIS. See the Education page in the top navbar for more details.
 
 ------------------------------------------------------------------------
 

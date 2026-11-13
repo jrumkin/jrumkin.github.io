@@ -2,7 +2,6 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "!posts/personal-data-project/"
   output-dir: docs
 
 website:
@@ -35,9 +34,9 @@ website:
         menu: 
           - icon: envelope
             text: Open email client
-            href: mailto:jrumkin@ucsb.edu
+            href: mailto:jlrumkin@gmail.com
           - icon: envelope
-            text: "jrumkin@ucsb.edu"
+            text: "jlrumkin@gmail.com"
           - icon: linkedin
             text: "LinkedIn"
             href: https://www.linkedin.com/in/jessica-rumkin-80b59129a/

@@ -4,7 +4,7 @@ description: A data science project based on data I collected on my life.
 author: "Jessi Rumkin"
 date: 05-28-2025
 categories: [RStudio, Data Science, UCSB]
-format: html
+image: post_thumbnail.png
 toc: true #sidenav
 execute:
   message: false # make sure messages don't show up
@@ -27,9 +27,11 @@ library(janitor) #package to clean data
 library(plotly) #package for making interactive figures
 library(DT) #package for making interactive tables
 
-mydata <- read.csv("mydata.csv") #read in mydata file
+mydata <- read.csv(here("posts", "personal-data-project", "mydata.csv")) #read in mydata file
 
 ```
+
+
 
 ```{r}
 #| label: Summarize data
@@ -116,15 +118,15 @@ mydata_static <- ggplot(data = mydata_marker, #using ggplot to create a static f
   geom_jitter(height = 0, #add geometry of jitter plot, 0 height jitter
               width = 0.2, #0.2 jitter width
               shape = 20) + #shape is open circles for the jitter points
-  geom_errorbar(data = mydata_summary, #add a geometry of an error bar from data of mydata_summary
-                aes(x = accompanied, #x axis by accompanied
-                     # y axis by average productivity scores
-                    ymin = ci_lower, #error bar lower
-                    ymax = ci_upper), #error bar upper
-                    width = 0.12, #manual width of the bars
-                    color = "black") + #color them black for visual ease
+  geom_errorbar(data = mydata_summary, 
+              aes(x = accompanied, # group data by accompanied or not
+                  ymin = ci_lower, #lower error bar value
+                  ymax = ci_upper), #high error bar value
+              width = 0.12,
+              color = "black",
+              inherit.aes = FALSE) + #don't inherit the aesthetics 
   geom_point(data = mydata_summary, #add geometry of a point from mydata_summary of the mean productivity score
-             aes(x = accompanied, #x axis by accompnied
+             aes(x = accompanied, #x axis by accompanied
                  y = mean_score), # y axis is the mean productivity score
              color = "black", #point showing the mean is black
              size = 2) +
@@ -134,7 +136,7 @@ mydata_static <- ggplot(data = mydata_marker, #using ggplot to create a static f
   scale_color_manual(values = c("Accompanied" = "#377b42", #manual colors for groups 
                                 "Alone" = "#AA71BA")) +
   theme_minimal() + #minimal theme
-  theme(legend.position = "none") #remove legend because it's redundent
+  theme(legend.position = "none") #remove legend because it's redundant
 
 
 #using plotly package to make the figure interactive

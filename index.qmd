@@ -8,7 +8,7 @@ about:
     - text: LinkedIn
       href: https://www.linkedin.com/in/jessica-rumkin-80b59129a/
     - text: Email
-      href: mailto::jlrumkin@me.com
+      href: mailto::jlrumkin@gmail.com
 ---
 
 Hello! My name is Jessica Rumkin, but I usually go by Jessi.

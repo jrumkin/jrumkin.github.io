@@ -6,7 +6,6 @@ listing:
   categories: true
 search: true
 page-layout: full
-format: html
 ---
 
 A wide variety of personal and professional projects. See the side navigation to explore and filter by category.
